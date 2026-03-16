@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_11-26-06",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,341 +23,46 @@\n mt%22%0A\n-%0Afunc unveilAge(age int) string %7B%0A%09if age %3C 12 %7B%0A%09%09return %22eh crianca%22%0A%09%7D%0A%0A%09if age %3C 18 %7B%0A%09%09return %22eh jovem%22%0A%09%7D%0A%0A%09if age %3C 65 %7B%0A%09%09return %22eh adulto%22%0A%09%7D%0A%0A%09if age %3C 1000 %7B%0A%09%09return %22eh idoso %22%0A%09%7D%0A%0A%09return %22eh mumia%22%0A%7D%0A%0Afunc main() %7B%0A%09var name string%0A%09var age int64%0A%09fmt.Scan(&name, &age)%0A%09fmt.Printf(%22%25s %25v%22, name, unveilAge(int(age))\n+func main() %7B%0A    fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_11-59-51",
+            "content": "@@ -329,10 +329,8 @@\n s %25v\n-%5Cn\n %22, n\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-16_12-00-04",
+            "content": "@@ -209,16 +209,17 @@\n eh idoso\n+ \n %22%0A%09%7D%0A%0A%09r\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-16_12-00-12",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc unveilAge(age int) string {\n\tif age < 12 {\n\t\treturn \"eh crianca\"\n\t}\n\n\tif age < 18 {\n\t\treturn \"eh jovem\"\n\t}\n\n\tif age < 65 {\n\t\treturn \"eh adulto\"\n\t}\n\n\tif age < 1000 {\n\t\treturn \"eh idoso\"\n\t}\n\n\treturn \"eh mumia\"\n}\n\nfunc main() {\n\tvar name string\n\tvar age int64\n\tfmt.Scan(&name, &age)\n\tfmt.Printf(\"%s %v\\n\", name, unveilAge(int(age)))\n}\n",
+            "lines": "30"
+        }
+    ]
+}

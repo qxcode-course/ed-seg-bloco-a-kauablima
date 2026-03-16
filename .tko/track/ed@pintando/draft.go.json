@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_09-18-57",
+            "content": "@@ -10,303 +10,59 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A%0Afunc formulaHeron(a float64, b float64, c float64) float64 %7B%0A%09p := (a + b + c) / 2%0A%09value := p * (p - a) * (p - b) * (p - c)%0A%09area := math.Sqrt(float64(value))%0A%09return area%0A%7D%0Afunc main() %7B%0A%09var a, b, c float64%0A%09fmt.Scan(&a, &b, &c)%0A%0A%09fmt.Println(formulaHeron(a, b, c)\n+func main() %7B%0A    fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_11-15-49",
+            "content": "@@ -194,17 +194,16 @@\n value))%0A\n-%0A\n %09return \n@@ -281,18 +281,11 @@\n rint\n-f(%22%25.2v%22, \n+ln(\n form\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_11-18-44",
+            "content": "@@ -172,19 +172,8 @@\n  := \n-math.Round(\n math\n@@ -197,19 +197,8 @@\n ue))\n-*100) / 100\n %0A%0A%09r\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-16_11-20-45",
+            "content": "@@ -311,11 +311,8 @@\n %25.2v\n- %5Cn\n %22, f\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-16_11-21-01",
+            "content": "@@ -193,14 +193,23 @@\n qrt(\n+float64(\n value)\n+)\n *100\n@@ -232,17 +232,16 @@\n  area%0A%7D%0A\n-%0A\n func mai\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-16_11-22-33",
+            "content": "@@ -298,17 +298,17 @@\n ntf(%22%25.2\n-f\n+v\n  %5Cn%22, fo\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-16_11-22-59",
+            "content": "@@ -299,16 +299,17 @@\n tf(%22%25.2f\n+ \n %5Cn%22, for\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-16_11-23-10",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc formulaHeron(a float64, b float64, c float64) float64 {\n\tp := (a + b + c) / 2\n\tvalue := p * (p - a) * (p - b) * (p - c)\n\tarea := math.Round(math.Sqrt(value)*100) / 100\n\n\treturn area\n}\n\nfunc main() {\n\tvar a, b, c float64\n\tfmt.Scan(&a, &b, &c)\n\n\tfmt.Printf(\"%.2f\\n\", formulaHeron(a, b, c))\n}\n",
+            "lines": "21"
+        }
+    ]
+}
