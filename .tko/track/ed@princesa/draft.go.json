@@ -2,8 +2,203 @@
     "patches": [
         {
             "label": "2026-03-09_16-30-23",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,92 +23,46 @@\n mt%22%0A\n-%0Afunc findPeople() %7B%0A%0A%7D%0A%0Afunc main() %7B%0A%09var num, player int%0A%09fmt.Scan(&num, &player)%0A\n+func main() %7B%0A    fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-16_15-49-23",
+            "content": "@@ -1,118 +1,39 @@\n-package main%0A%0Aimport %22fmt%22%0A%0Afunc findPeople() %7B%0A%0A%7D%0A%0Afunc main() %7B%0A%09var num, player int%0A%09fmt.Scan(&num, &player)%0A%0A%09\n+@@ -110,53 +110,6 @@%0A r)%250A%250A%0A-%2509\n veto\n@@ -46,10 +46,14 @@\n ake(\n-%5B%5D\n+%255B%255D\n int,\n@@ -61,10 +61,14 @@\n num)\n-%0A%09\n+%250A%2509\n fmt.\n@@ -85,7 +85,16 @@\n tor)\n-%0A%7D\n+%250A%0A %257D%250A\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-16_16-04-05",
+            "content": "@@ -137,129 +137,8 @@\n um)%0A\n-%09for _, i := range vetor %7B%0A%09%09size := len(vetor)%0A%09%09one := 0%0A%09%09if i %3C len(vetor) %7B%0A%09%09%09vetor = append(vetor, one+1)%0A%09%09%7D%0A%09%7D%0A%0A\n %09fmt\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-16_16-06-51",
+            "content": "@@ -160,16 +160,48 @@\n vetor %7B%0A\n+%09%09size := len(vetor)%0A%09%09one := 0%0A\n %09%09if i %3C\n@@ -239,17 +239,19 @@\n (vetor, \n-i\n+one\n +1)%0A%09%09%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-16_16-07-42",
+            "content": "@@ -132,9 +132,11 @@\n nt, \n-0\n+num\n )%0A%09f\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-16_16-08-04",
+            "content": "@@ -133,13 +133,8 @@\n t, 0\n-, num\n )%0A%09f\n@@ -158,16 +158,39 @@\n vetor %7B%0A\n+%09%09if i %3C len(vetor) %7B%0A%09\n %09%09vetor \n@@ -210,16 +210,20 @@\n r, i+1)%0A\n+%09%09%7D%0A\n %09%7D%0A%0A%09fmt\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-16_16-08-50",
+            "content": "@@ -140,16 +140,19 @@\n um)%0A%09for\n+ _,\n  i := ra\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-09-04",
+            "content": "@@ -150,31 +150,19 @@\n  := \n-1; i %3C= len(vetor); i++\n+range vetor\n  %7B%0A%09\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-09-46",
+            "content": "@@ -129,16 +129,21 @@\n %5B%5Dint, 0\n+, num\n )%0A%09for i\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-09-57",
+            "content": "@@ -192,16 +192,18 @@\n vetor, i\n++1\n )%0A%09%7D%0A%0A%09f\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-10-30",
+            "content": "@@ -132,19 +132,17 @@\n nt, \n-num\n+0\n )%0A%09for i\n , v \n@@ -141,26 +141,35 @@\n or i\n-, v := range vetor\n+ := 1; i %3C= len(vetor); i++\n  %7B%0A%09\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-11-56",
+            "content": "@@ -143,35 +143,26 @@\n or i\n+, v\n  := \n-1; i %3C= len(vetor); i++\n+range vetor\n  %7B%0A%09\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-14-36",
+            "content": "@@ -132,9 +132,11 @@\n nt, \n-0\n+num\n )%0A%09f\n@@ -149,20 +149,28 @@\n = 1; i %3C\n- num\n+= len(vetor)\n ; i++ %7B%0A\n@@ -180,19 +180,27 @@\n etor\n-%5Bi%5D = i + 1\n+ = append(vetor, i)\n %0A%09%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-16-58",
+            "content": "@@ -141,17 +141,17 @@\n or i := \n-0\n+1\n ; i %3C nu\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-17-06",
+            "content": "@@ -147,17 +147,16 @@\n = 0; i %3C\n-=\n  num; i+\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-17-24",
+            "content": "@@ -128,19 +128,17 @@\n (%5B%5Dint, \n-num\n+0\n )%0A%09for i\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-17-43",
+            "content": "@@ -149,16 +149,17 @@\n = 0; i %3C\n+=\n  num; i+\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_16-17-50",
+            "content": "@@ -41,146 +41,8 @@\n ple(\n-vetor %5B%5Dint, player int) %7B%0A%09for i, v := range vetor %7B%0A%09%09if player == v && v == len(vetor)-1 %7B%0A%09%09%09vetor%5Bi+1%5D = 0%0A%09%09%7D%0A%09%7D%0A%7D%0A%0Afunc deadPeople(\n ) %7B%0A\n@@ -188,93 +188,8 @@\n %09%7D%0A%0A\n-%09for 1 %3C num %7B%0A%09%09findPeople(vetor, player)%0A%09%09num--%0A%0A%09%09if 1 == num %7B%0A%09%09%09break%0A%09%09%7D%0A%09%7D%0A%0A\n %09fmt\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_17-00-51",
+            "content": "@@ -341,32 +341,8 @@\n m %7B%0A\n-%0A%09%09if len(vetor) %3E 1 %7B%0A%09\n %09%09fi\n@@ -371,18 +371,13 @@\n )%0A%09%09\n-%09\n num--\n-%0A%09%09%7D\n %0A%0A%09%09\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-17_10-08-02",
+            "content": "@@ -74,13 +74,11 @@\n or i\n-dx\n , \n-_\n+v\n  := \n@@ -107,25 +107,37 @@\n yer == v\n-etor%5Bidx%5D\n+ && v == len(vetor)-1\n  %7B%0A%09%09%09ve\n@@ -145,10 +145,10 @@\n or%5Bi\n-dx\n++1\n %5D = \n@@ -168,148 +168,23 @@\n unc \n-handlePrint(vetor %5B%5Dint) %7B%0A%09fmt.Print(%22%5B %22)%0A%09for i, _ := range vetor %7B%0A%09%09if i != 0 %7B%0A%09%09%09fmt.Printf(%22%25v%3E%22, vetor%5Bi%5D)%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(%22%5D%22)\n+deadPeople() %7B%0A\n %0A%7D%0A%0A\n@@ -402,30 +402,8 @@\n m--%0A\n-%09%09%09handlePrint(vetor)%0A\n %09%09%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-17_16-28-49",
+            "content": "@@ -194,16 +194,17 @@\n Print(%22%5B\n+ \n %22)%0A%09for \n@@ -258,56 +258,11 @@\n tf(%22\n- %25v %22, vetor%5Bi%5D)%0A%09%09%7D else %7B%0A%09%09%09fmt.Printf(%22 \n %25v%3E\n- \n %22, v\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-03-17_16-31-09",
+            "content": "@@ -300,16 +300,17 @@\n tf(%22 %25v%3E\n+ \n %22, vetor\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-17_16-31-26",
+            "content": "@@ -478,36 +478,16 @@\n i + 1%0A%09%7D\n-%0A%09fmt.Println(vetor)\n %0A%0A%09for 1\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-17_16-31-55",
+            "content": "@@ -137,10 +137,8 @@\n %5Bidx\n-+1\n %5D = \n@@ -567,16 +567,25 @@\n player)%0A\n+%09%09%09num--%0A\n %09%09%09handl\n@@ -598,25 +598,16 @@\n (vetor)%0A\n-%09%09%09num--%0A\n %09%09%7D%0A%0A%09%09i\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-03-18_11-08-47",
+            "content": "@@ -540,16 +540,45 @@\n ) %3E 1 %7B%0A\n+%09%09%09findPeople(vetor, player)%0A\n %09%09%09handl\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-03-19_11-49-05",
+            "content": "@@ -145,39 +145,8 @@\n = 0%0A\n-%09%09%09vetor = append(vetor%5B:idx%5D)%0A\n %09%09%7D%0A\n@@ -172,36 +172,24 @@\n int(vetor %5B%5D\n-int, player \n int) %7B%0A%09fmt.\n@@ -237,17 +237,12 @@\n f i \n-== player\n+!= 0\n  %7B%0A%09\n@@ -258,17 +258,17 @@\n ntf(%22 %25v\n-%3E\n+ \n %22, vetor\n@@ -272,17 +272,16 @@\n tor%5Bi%5D)%0A\n-%0A\n %09%09%7D else\n@@ -293,33 +293,33 @@\n %09fmt.Printf(%22 %25v\n- \n+%3E\n %22, vetor%5Bi%5D)%0A%09%09%7D\n@@ -480,16 +480,36 @@\n i + 1%0A%09%7D\n+%0A%09fmt.Println(vetor)\n %0A%0A%09for 1\n@@ -517,16 +517,17 @@\n %3C num %7B%0A\n+%0A\n %09%09if len\n@@ -564,32 +564,8 @@\n etor\n-, player)%0A%09%09%09findPeople(\n )%0A%09%09\n@@ -575,16 +575,17 @@\n m--%0A%09%09%7D%0A\n+%0A\n %09%09if 1 =\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-19_13-24-05",
+            "content": "@@ -598,16 +598,31 @@\n player)%0A\n+%09%09%09findPeople()\n %0A%09%09%09num-\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-19_13-24-13",
+            "content": "@@ -274,24 +274,17 @@\n  %7B%0A%09%09if \n-vetor%5Bi%5D\n+i\n  == play\n@@ -598,16 +598,17 @@\n player)%0A\n+%0A\n %09%09%09num--\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-19_13-24-38",
+            "content": "@@ -354,16 +354,17 @@\n Printf(%22\n+ \n %25v %22, ve\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-03-19_13-25-29",
+            "content": "@@ -354,19 +354,19 @@\n Printf(%22\n- \n %25v\n+ \n %22, vetor\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-03-19_13-25-34",
+            "content": "@@ -357,17 +357,16 @@\n ntf(%22 %25v\n- \n %22, vetor\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-03-19_13-25-48",
+            "content": "@@ -121,16 +121,36 @@\n %5Bidx%5D %7B%0A\n+%09%09%09vetor%5Bidx+1%5D = 0%0A\n %09%09%09vetor\n@@ -174,26 +174,8 @@\n idx%5D\n-, vetor%5Bidx+1:%5D...\n )%0A%09%09\n@@ -609,37 +609,8 @@\n er)%0A\n-%09%09%09findPeople(vetor, player)%0A\n %09%09%09n\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-03-19_13-28-01",
+            "content": "@@ -178,85 +178,8 @@\n %09%09%7D%0A\n-%09%09if player == len(vetor)-1 %7B%0A%09%09%09vetor = append(vetor%5B0 : len(vetor)-1%5D)%0A%09%09%7D%0A\n %09%7D%0A%7D\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-03-19_13-36-22",
+            "content": "@@ -176,34 +176,81 @@\n )%0A%09%09\n-%09handlePrint(vetor, player\n+%7D%0A%09%09if player == len(vetor)-1 %7B%0A%09%09%09vetor = append(vetor%5B0 : len(vetor)-1%5D\n )%0A%09%09\n@@ -650,16 +650,46 @@\n ) %3E 1 %7B%0A\n+%09%09%09handlePrint(vetor, player)%0A\n %09%09%09findP\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-03-19_13-38-11",
+            "content": "@@ -170,16 +170,45 @@\n 1:%5D...)%0A\n+%09%09%09handlePrint(vetor, player)\n %0A%09%09%7D%0A%09%7D%0A\n@@ -607,38 +607,8 @@\n 1 %7B%0A\n-%09%09%09handlePrint(vetor, player)%0A\n %09%09%09f\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-03-19_13-40-03",
+            "content": "@@ -174,32 +174,8 @@\n ..)%0A\n-%09%09%09player = vetor%5Bidx+1%5D\n %0A%09%09%7D\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-19_13-41-03",
+            "content": "@@ -125,33 +125,8 @@\n %5D %7B%0A\n-%09%09%09player = vetor%5Bidx+1%5D%0A\n %09%09%09v\n@@ -170,16 +170,40 @@\n 1:%5D...)%0A\n+%09%09%09player = vetor%5Bidx+1%5D\n %0A%09%09%7D%0A%09%7D%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-19_13-41-45",
+            "content": "@@ -128,70 +128,33 @@\n %0A%09%09%09\n-if vetor%5Bidx%5D == len(vetor)-1 %7C%7C player == len(vetor)-1 %7B\n+player = vetor%5Bidx+1%5D\n %0A%09%09%09\n-%09\n veto\n@@ -181,61 +181,25 @@\n x%5D, \n-0)%0A%09%09%09%7D%0A%0A%09%09%09vetor%5Bidx+1%5D = 0%0A%09%09%09player = vetor%5Bidx+2%5D\n+vetor%5Bidx+1:%5D...)\n %0A%0A%09%09\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-03-19_13-45-41",
+            "content": "@@ -30,41 +30,297 @@\n unc \n-handlePrint(vetor %5B%5Dint, swordIdx\n+findPeople(vetor %5B%5Dint, player int) %7B%0A%09for idx, _ := range vetor %7B%0A%09%09if player == vetor%5Bidx%5D %7B%0A%09%09%09if vetor%5Bidx%5D == len(vetor)-1 %7C%7C player == len(vetor)-1 %7B%0A%09%09%09%09vetor = append(vetor%5B:idx%5D, 0)%0A%09%09%09%7D%0A%0A%09%09%09vetor%5Bidx+1%5D = 0%0A%09%09%09player = vetor%5Bidx+2%5D%0A%0A%09%09%7D%0A%09%7D%0A%7D%0A%0Afunc handlePrint(vetor %5B%5Dint, player\n  int\n@@ -347,19 +347,17 @@\n %09for i, \n-val\n+_\n  := rang\n@@ -375,21 +375,26 @@\n %09if \n-i == swordIdx\n+vetor%5Bi%5D == player\n  %7B%0A%09\n@@ -411,27 +411,33 @@\n tf(%22 %25v%3E%22, v\n-al)\n+etor%5Bi%5D)%0A\n %0A%09%09%7D else %7B%0A\n@@ -458,14 +458,20 @@\n %22 %25v\n+ \n %22, v\n-al\n+etor%5Bi%5D\n )%0A%09%09\n@@ -489,17 +489,16 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A%0Af\n@@ -640,104 +640,26 @@\n %7D%0A%0A%09\n-swordIdx := 0%0A%09for i, v := range vetor %7B%0A%09%09if v == player %7B%0A%09%09%09swordIdx = i%0A%09%09%09break%0A%09%09%7D%0A%09%7D%0A%09for\n+for 1 %3C num %7B%0A%09%09if\n  len\n@@ -672,16 +672,17 @@\n ) %3E 1 %7B%0A\n+%09\n %09%09handle\n@@ -698,183 +698,109 @@\n or, \n-swordIdx)%0A%0A%09%09killIdx := (swordIdx + 1) %25 \n+player)%0A%09%09%09findPeop\n le\n-n\n (vetor\n-)%0A%0A%09%09vetor = append(vetor%5B:killIdx%5D, vetor%5BkillIdx+1:%5D...)%0A%0A%09%09swordIdx = killIdx %25 len(vetor)\n+, player)%0A%09%09%09num--%0A%09%09%7D%0A%09%09if 1 == num %7B%0A%09%09%09break%0A%09%09%7D\n %0A%09%7D%0A\n-%09handle\n+%0A%09fmt.\n Print\n+ln\n (vetor\n-, swordIdx\n )%0A%7D%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-03-20_00-56-20",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc handlePrint(vetor []int, swordIdx int) {\n\tfmt.Print(\"[\")\n\tfor i, val := range vetor {\n\t\tif i == swordIdx {\n\t\t\tfmt.Printf(\" %v>\", val)\n\t\t} else {\n\t\t\tfmt.Printf(\" %v\", val)\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n\nfunc main() {\n\tvar num, player int\n\tfmt.Scan(&num, &player)\n\n\tvetor := make([]int, num)\n\tfor i := 0; i < num; i++ {\n\t\tvetor[i] = i + 1\n\t}\n\n\tswordIdx := 0\n\tfor i, v := range vetor {\n\t\tif v == player {\n\t\t\tswordIdx = i\n\t\t\tbreak\n\t\t}\n\t}\n\tfor len(vetor) > 1 {\n\t\thandlePrint(vetor, swordIdx)\n\n\t\tkillIdx := (swordIdx + 1) % len(vetor)\n\n\t\tvetor = append(vetor[:killIdx], vetor[killIdx+1:]...)\n\n\t\tswordIdx = killIdx % len(vetor)\n\t}\n\thandlePrint(vetor, swordIdx)\n}\n",
+            "lines": "43"
         }
     ]
 }

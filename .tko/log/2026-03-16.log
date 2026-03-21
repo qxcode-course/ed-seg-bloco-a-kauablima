@@ -23,3 +23,29 @@
 2026-03-16 12:01:07, EXEC, v:1, k:ed@mumia, mode:FULL, rate:100
 2026-03-16 12:01:07, EXEC, v:1, k:ed@mumia, mode:FULL, rate:100
 2026-03-16 12:01:07, MOVE, v:1, k:ed@mumia, mode:BACK
+2026-03-16 13:58:44, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-16 15:49:19, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-16 15:49:23, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:13
+2026-03-16 16:04:04, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:15
+2026-03-16 16:04:04, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:15
+2026-03-16 16:04:05, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:15
+2026-03-16 16:06:51, EXEC, v:1, k:ed@princesa, mode:FULL, size:23, fail:COMP
+2026-03-16 16:07:42, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:21
+2026-03-16 16:08:04, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:21
+2026-03-16 16:08:50, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:09:04, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:09:46, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:09:57, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:10:30, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:11:56, EXEC, v:1, k:ed@princesa, mode:FULL, size:19, fail:COMP
+2026-03-16 16:14:36, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:16:58, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:17:06, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:17:24, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:17:25, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0
+2026-03-16 16:17:43, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:17:50, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:19
+2026-03-16 16:17:51, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0
+2026-03-16 16:54:40, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-03-16 17:00:50, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-16 17:00:51, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:36
