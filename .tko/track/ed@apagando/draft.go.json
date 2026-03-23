@@ -2,8 +2,123 @@
     "patches": [
         {
             "label": "2026-03-21_19-45-20",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -36,153 +36,7 @@\n () %7B\n-%0A%0A%09var num, player int%0A%09fmt.Scan(&num, &player)%0A%0A%09vetor := make(%5B%5Dint, num)%0A%09for i := 0; i %3C num; i++ %7B%0A%09%09vetor%5Bi%5D = i + 1%0A%09%7D%0A%0A%09fmt.Println(vetor)\n %0A%7D%0A\n",
             "lines": "4"
+        },
+        {
+            "label": "2026-03-21_19-53-04",
+            "content": "@@ -1,109 +1,118 @@\n-package main%0A%0Aimport %22fmt%22%0A%0Afunc removePeople() %7B%0A%0A%7D%0A%0Afunc main() %7B%0A%09var people int%0A%09fmt.Sc\n+@@ -39,19 +39,25 @@%0A ) %257B%250A%0A+%250A%0A %2509var %0A-people%0A+num, player%0A  int%0A@@ -72,45 +72,49 @@%0A \n an(&\n+%0A-\n people)\n-%0A%0A%09\n+%250A%250A%2509\n queu\n@@ -128,53 +128,173 @@\n (map\n-%5Bint%5Dint)%0A%0A%09for i := 0; i %3C people; i++ %7B%0A%09%09v\n+%255Bint%255Dint)%250A%0A+num, &player)%250A%250A%2509vetor := make(%255B%255Dint, num)%0A %250A%2509fo%0A@@ -131,14 +131,11 @@%0A i %253C %0A-people%0A+num%0A ; i+%0A@@ -145,106 +145,26 @@%0A %250A%2509%2509v%0A-\n ar v\n@@ -293,35 +293,41 @@\n 9v%0A-ar value int\n-%0A%09%09\n+%250A%2509%2509\n fmt.Scan(&value)\n@@ -330,33 +330,58 @@\n lue)\n-%0A%09%09queue%5Bi%5D = value%0A%09%7D%0A%0A%09\n+%250A%250A%2509%2509queue%255Bi%255D = value%250A%2509%257D%250A%250A%2509\n var \n@@ -394,18 +394,22 @@\n ueue int\n-%0A%09\n+%250A%2509\n fmt.Scan\n@@ -426,183 +426,100 @@\n ue)%0A\n-%09for i := 0; i %3C leaveQueue; i++ %7B%0A%09%09var value int%0A%09%09fmt.Scan(&value)%0A%0A%09%09for key, v := range queue %7B%0A%09%09%09if value == v %7B%0A%09%09%09%09delete(queue, key)%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Prin\n++etor%255Bi%255D = i + 1%250A%2509%257D%0A %250A%250A%2509f%0A@@ -178,13 +178,13 @@%0A \n tln(\n+%0A-\n queue\n-)%0A%0A%7D\n+%0A+vetor%0A )%250A%257D%250A\n %0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-23_11-09-00",
+            "content": "@@ -420,69 +420,8 @@\n %0A%0A%09f\n-or _, value := range queue %7B%0A%09%09fmt.Printf(%22%25v%22, value)%0A%09%7D%0A%0A%09f\n mt.P\n@@ -427,13 +427,18 @@\n Println(\n+queue\n )%0A%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-23_11-15-59",
+            "content": "@@ -461,17 +461,16 @@\n intf(%22%25v\n- \n %22, value\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-23_11-16-13",
+            "content": "@@ -419,19 +419,17 @@\n %7D%0A%0A%09for \n-key\n+_\n , value \n@@ -449,64 +449,8 @@\n e %7B%0A\n-%09%09getKey := (key + 1) %25 len(queue)%0A%09%09if getKey %3C key %7B%0A%09\n %09%09fm\n@@ -472,20 +472,16 @@\n  value)%0A\n-%09%09%7D%0A\n %09%7D%0A%0A%09fmt\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-23_11-19-11",
+            "content": "@@ -491,18 +491,18 @@\n %09if \n-k\n+getK\n ey %3C \n-getK\n+k\n ey %7B\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-23_11-19-58",
+            "content": "@@ -447,16 +447,72 @@\n queue %7B%0A\n+%09%09getKey := (key + 1) %25 len(queue)%0A%09%09if key %3C getKey %7B%0A%09\n %09%09fmt.Pr\n@@ -530,16 +530,20 @@\n  value)%0A\n+%09%09%7D%0A\n %09%7D%0A%0A%09fmt\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-23_11-20-13",
+            "content": "@@ -423,9 +423,11 @@\n for \n-_\n+key\n , va\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-23_11-20-22",
+            "content": "@@ -18,26 +18,13 @@\n ort \n-(%0A%09\n %22fmt%22\n-%0A%09%22sort%22%0A)\n %0A%0Afu\n@@ -258,17 +258,16 @@\n eQueue)%0A\n-%0A\n %09for i :\n@@ -414,123 +414,12 @@\n %09%09%7D%0A\n+\n %09%7D%0A%0A\n-%09sortKeys := make(%5B%5Dint, 0)%0A%09for k := range queue %7B%0A%09%09sortKeys = append(sortKeys, k)%0A%09%7D%0A%0A%09sort.Ints(sortKeys)%0A%0A\n %09for\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-23_11-29-31",
+            "content": "@@ -570,17 +570,16 @@\n queue %7B%0A\n-%0A\n %09%09fmt.Pr\n@@ -594,20 +594,13 @@\n  %22, \n-queue%5B\n value\n-%5D\n )%0A%09%7D\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-23_11-30-08",
+            "content": "@@ -543,31 +543,8 @@\n s)%0A%0A\n-%09fmt.Println(sortKeys)%0A\n %09for\n@@ -591,21 +591,28 @@\n (%22%25v %22, \n+queue%5B\n value\n+%5D\n )%0A%09%7D%0A%0A%09f\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-03-23_11-30-36",
+            "content": "@@ -567,19 +567,17 @@\n s)%0A%09for \n-key\n+_\n , value \n@@ -597,58 +597,9 @@\n e %7B%0A\n-%09%09for _, v := range sortKeys %7B%0A%09%09%09if key == v %7B%0A%09%09\n+%0A\n %09%09fm\n@@ -621,25 +621,16 @@\n  value)%0A\n-%09%09%09%7D%0A%09%09%7D%0A\n %09%7D%0A%0A%09fmt\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-03-23_11-31-55",
+            "content": "@@ -539,16 +539,39 @@\n tKeys)%0A%0A\n+%09fmt.Println(sortKeys)%0A\n %09for key\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-03-23_11-32-56",
+            "content": "@@ -574,25 +574,28 @@\n eue %7B%0A%09%09for \n-i\n+_, v\n  := range so\n@@ -610,57 +610,19 @@\n %0A%09%09%09\n-firstValue := sortKeys%5Bi%5D%0A%09%09%09if key == firstValue\n+if key == v\n  %7B%0A%09\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-03-23_11-34-32",
+            "content": "@@ -34,16 +34,42 @@\n ort%22%0A)%0A%0A\n+func removePeople() %7B%0A%0A%7D%0A%0A\n func mai\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-03-23_11-34-55",
+            "content": "@@ -38,34 +38,8 @@\n %0A)%0A%0A\n-func removePeople() %7B%0A%0A%7D%0A%0A\n func\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-03-23_11-35-18",
+            "content": "@@ -34,16 +34,42 @@\n ort%22%0A)%0A%0A\n+func removePeople() %7B%0A%0A%7D%0A%0A\n func mai\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-03-23_11-35-25",
+            "content": "@@ -512,16 +512,51 @@\n rtKeys)%0A\n+%0A%09for key, value := range queue %7B%0A%09\n %09for i :\n@@ -580,39 +580,62 @@\n %7B%0A%09%09\n-val, ok := queue\n+%09firstValue := sortKeys\n %5Bi%5D%0A\n-%0A\n+%09\n %09%09if \n-o\n k\n+ey == firstValue\n  %7B%0A\n+%09\n %09%09%09f\n@@ -654,17 +654,24 @@\n v %22, val\n-)\n+ue)%0A%09%09%09%7D\n %0A%09%09%7D%0A%09%7D%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-03-23_11-42-18",
+            "content": "@@ -522,11 +522,8 @@\n or i\n-, _\n  := \n@@ -561,16 +561,17 @@\n ueue%5Bi%5D%0A\n+%0A\n %09%09if ok \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-03-23_11-42-52",
+            "content": "@@ -515,39 +515,8 @@\n eys)\n-%0A%0A%09fmt.Println(sortKeys, queue)\n %0A%09fo\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-03-23_11-43-36",
+            "content": "@@ -635,79 +635,8 @@\n al)%0A\n-%09%09%09fmt.Println(sortKeys, queue)%0A%09%09%7D else %7B%0A%09%09%09fmt.Println(%22n%C3%A3o achou%22)%0A\n %09%09%7D%0A\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-23_11-45-07",
+            "content": "@@ -519,15 +519,45 @@\n %0A%0A%09f\n-or _, v\n+mt.Println(sortKeys, queue)%0A%09for i, _\n  := \n@@ -592,17 +592,17 @@\n = queue%5B\n-v\n+i\n %5D%0A%09%09if o\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-03-23_11-46-41",
+            "content": "@@ -608,10 +608,8 @@\n %0A%09%09%09\n-//\n fmt.\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-03-23_11-46-55",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n)\n\nfunc main() {\n\tvar people int\n\tfmt.Scan(&people)\n\n\tqueue := make(map[int]int)\n\n\tfor i := 0; i < people; i++ {\n\t\tvar value int\n\t\tfmt.Scan(&value)\n\t\tqueue[i] = value\n\t}\n\n\tvar leaveQueue int\n\tfmt.Scan(&leaveQueue)\n\n\tfor i := 0; i < leaveQueue; i++ {\n\t\tvar value int\n\t\tfmt.Scan(&value)\n\n\t\tfor key, v := range queue {\n\t\t\tif value == v {\n\t\t\t\tdelete(queue, key)\n\t\t\t}\n\t\t}\n\t}\n\n\tsortKeys := make([]int, 0)\n\tfor k := range queue {\n\t\tsortKeys = append(sortKeys, k)\n\t}\n\n\tsort.Ints(sortKeys)\n\n\tfor _, v := range sortKeys {\n\t\tval, ok := queue[v]\n\t\tif ok {\n\t\t\tfmt.Printf(\"%v \", val)\n\t\t\t//fmt.Println(sortKeys, queue)\n\t\t} else {\n\t\t\tfmt.Println(\"n\u00e3o achou\")\n\t\t}\n\t}\n\n\tfmt.Println()\n\n}\n",
+            "lines": "53"
         }
     ]
 }

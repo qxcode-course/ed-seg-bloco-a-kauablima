@@ -13,13 +13,13 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@análise
 - ed@main-quest
-- ed@recursão
+- ed@análise
 tasks:
   ed@pintando: '{self:1, rate:100}'
   ed@mumia: '{self:1, rate:100, study:3}'
   ed@princesa: '{self:1, rate:100, study:5, code:1, refactor:1}'
+  ed@apagando: '{self:1, rate:100}'
 flags:
   painel: 1
   quests: 0
