@@ -13,19 +13,22 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@main-quest
-- ed@análise
+- ed@rec
+- ed@map_set
+- ed@basic
 tasks:
   ed@pintando: '{self:1, rate:100}'
   ed@mumia: '{self:1, rate:100, study:3}'
+  ed@fuga: '{self:1, rate:100}'
   ed@princesa: '{self:1, rate:100, study:5, code:1, refactor:1}'
   ed@apagando: '{self:1, rate:100}'
+  ed@manipulacao: '{self:1, rate:100}'
 flags:
-  painel: 1
-  quests: 0
-  tracks: 0
+  panel: 1
+  inbox: 1
+  show_panel: 1
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@apagando
+selected: ed@manipulacao

@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_15-52-23",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,126 +37,39 @@\n ) %7B%0A\n-%09var num int%0A%09fmt.Scan(&num)%0A%0A%09for i := 0; i %3C 4; i++ %7B%0A%09%09var n1, n2 int%0A%09%09fmt.Scan(&n1, &n2)%0A%0A%09%09fmt.Println(n1, n2)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_16-06-56",
+            "content": "@@ -82,19 +82,17 @@\n  0; i %3C \n-num\n+4\n ; i++ %7B%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-23_16-07-12",
+            "content": "@@ -132,13 +132,35 @@\n , &n2)%0A%0A\n+%09%09fmt.Println(n1, n2)%0A\n %09%7D%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-23_16-07-29",
+            "content": "@@ -25,150 +25,8 @@\n t%22%0A%0A\n-func myJoin(lista %5B%5Dint, sep string) string %7B%0A%09saida := %22%22%0A%0A%09for i, v := range lista %7B%0A%09%09if i != 0 %7B%0A%09%09%09saida += sep%0A%09%09%7D%0A%09%7D%0A%0A%09return saida%0A%7D%0A%0A\n func\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-24_10-10-09",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc myJoin(lista []int, sep string) string {\n\tsaida := \"\"\n\n\tfor i, v := range lista {\n\t\tif i != 0 {\n\t\t\tsaida += sep\n\t\t}\n\t}\n\n\treturn saida\n}\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\n\n\tfor i := 0; i < num; i++ {\n\t\tvar n1, n2 int\n\t\tfmt.Scan(&n1, &n2)\n\n\t}\n}\n",
+            "lines": "26"
+        }
+    ]
+}
