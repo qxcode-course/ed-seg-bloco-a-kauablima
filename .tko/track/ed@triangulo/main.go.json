@@ -1,0 +1,154 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_13-10-03",
+            "content": "@@ -95,163 +95,16 @@\n  %7B%0A%09\n-vetor := append(%5B%5Dint(nil), vet...)%0A%09factorial := 1%0A%09for %7B%0A%0A%09%09if len(vetor) %3C 2 %7B%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09factorial = factorial * len(vetor)%0A%09%09Join(vetor, %22 %22)%0A%09%7D%0A\n+_ = vet;\n %0A%09//\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-03-31_13-39-21",
+            "content": "@@ -91,18 +91,16 @@\n int) %7B%0A%09\n-//\n vetor :=\n@@ -131,186 +131,124 @@\n ..)%0A\n-%0A%09arr := %5B%5Dint%7B%7D%0A%09if len(vet) %3E 1\n+%09factorial := 1%0A%09for\n  %7B%0A\n+%0A\n %09%09\n-for i := 0; i %3C len(vet)-1; i++ %7B%0A%09%09%09arr = append(arr, vet%5Bi%5D+vet%5Bi+1%5D)\n+if len(vetor) %3C 2 %7B%0A%09%09%09break\n %0A%09%09%7D%0A\n+%0A\n %09%09f\n-mt.Print(%22%5B %22)%0A%09%09for _, val := range arr %7B\n+actorial = factorial * len(vetor)\n %0A%09%09\n-%09\n Join(\n-ar\n+veto\n r, %22 %22)%0A\n %09%09%7D%0A\n@@ -247,33 +247,8 @@\n  %22)%0A\n-%09%09%7D%0A%0A%09%09fmt.Println(%22%5D%22)%0A%0A\n %09%7D%0A%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-31_16-17-12",
+            "content": "@@ -240,16 +240,19 @@\n %5Bi+1%5D)%0A%09\n+%09%7D%0A\n %09%09fmt.Pr\n@@ -259,16 +259,84 @@\n int(\n-arr)%0A%09%09%7D\n+%22%5B %22)%0A%09%09for _, val := range arr %7B%0A%09%09%09Join(arr, %22 %22)%0A%09%09%7D%0A%0A%09%09fmt.Println(%22%5D%22)%0A\n %0A%09%7D%0A\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-03-31_16-17-19",
+            "content": "@@ -264,25 +264,8 @@\n %0A%09%09%7D\n-%0A%0A%09%09processa(arr)\n %0A%09%7D%0A\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-03-31_16-18-15",
+            "content": "@@ -205,26 +205,8 @@\n + %7B%0A\n-%09%09%09fmt.Print(arr)%0A\n %09%09%09a\n@@ -239,16 +239,33 @@\n t%5Bi+1%5D)%0A\n+%09%09%09fmt.Print(arr)\n %0A%09%09%7D%0A%0A%09%09\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-31_16-18-36",
+            "content": "@@ -169,25 +169,8 @@\n 1 %7B%0A\n-%09%09processa(arr)%0A%0A\n %09%09fo\n@@ -263,16 +263,32 @@\n )%0A%0A%09%09%7D%0A%0A\n+%09%09processa(arr)%0A\n %09%7D%0A%0A%09// \n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-03-31_16-18-52",
+            "content": "@@ -171,17 +171,16 @@\n %7B%0A%09%09\n-fmt.Print\n+processa\n (arr\n@@ -218,17 +218,34 @@\n ; i++ %7B%0A\n+%09%09%09fmt.Print(arr)\n %0A\n-\n %09%09%09arr =\n@@ -279,30 +279,13 @@\n %5D)%0A%0A\n+\n %09%09%7D%0A%0A\n-%09%09processa(arr)%0A%0A\n %09%7D%0A%0A\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-03-31_16-19-30",
+            "content": "@@ -164,16 +164,33 @@\n t) %3E 1 %7B\n+%0A%09%09fmt.Print(arr)\n %0A%0A%09%09for \n@@ -262,25 +262,8 @@\n 1%5D)%0A\n-%09%09%09fmt.Print(arr)\n %0A%09%09%7D\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-03-31_16-19-42",
+            "content": "@@ -129,16 +129,17 @@\n vet...)%0A\n+%0A\n %09arr := \n@@ -146,17 +146,16 @@\n %5B%5Dint%7B%7D%0A\n-%0A\n %09if len(\n@@ -202,16 +202,17 @@\n ; i++ %7B%0A\n+%0A\n %09%09%09arr =\n@@ -241,16 +241,34 @@\n t%5Bi+1%5D)%0A\n+%09%09%09fmt.Print(arr)%0A\n %09%09%7D%0A%0A%09%09p\n@@ -289,25 +289,8 @@\n %09%7D%0A%0A\n-%09fmt.Print(arr)%0A%0A\n %09// \n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-03-31_16-22-05",
+            "content": "@@ -128,16 +128,32 @@\n  vet...)\n+%0A%09arr := %5B%5Dint%7B%7D\n %0A%0A%09if le\n@@ -169,24 +169,8 @@\n 1 %7B%0A\n-%09%09arr := %5B%5Dint%7B%7D\n %0A%09%09f\n@@ -244,16 +244,17 @@\n 1%5D)%0A%09%09%7D%0A\n+%0A\n %09%09proces\n@@ -263,16 +263,19 @@\n (arr)%0A%0A%09\n+%7D%0A%0A\n %09fmt.Pri\n@@ -281,19 +281,16 @@\n int(arr)\n-%0A%09%7D\n %0A%0A%09// 1.\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-03-31_16-23-31",
+            "content": "@@ -276,10 +276,8 @@\n rint\n-ln\n (arr\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-31_16-23-53",
+            "content": "@@ -279,22 +279,11 @@\n tln(\n-Join(arr, %22 %22)\n+arr\n )%0A%09%7D\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-31_16-24-23",
+            "content": "@@ -276,59 +276,25 @@\n rint\n-(%22%5B%22)%0A%09%09fmt.Println(Join(arr, %22 %22))%0A%09%09fmt.Print(%22%5D%22\n+ln(Join(arr, %22 %22)\n )%0A%09%7D\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-31_16-24-57",
+            "content": "@@ -276,36 +276,60 @@\n rint\n-f\n (%22%5B\n-%25v%5D%5Cn%22, Join(arr, %22 %22))%0A\n+%22)%0A%09%09fmt.Println(Join(arr, %22 %22))%0A%09%09fmt.Print(%22%5D%22)\n %0A%09%7D%0A\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-03-31_16-25-38",
+            "content": "@@ -295,17 +295,17 @@\n n(arr, %22\n--\n+ \n %22))%0A%0A%09%7D%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-03-31_16-26-33",
+            "content": "@@ -280,12 +280,10 @@\n f(%22%5B\n- \n %25v\n- \n %5D%5Cn%22\n@@ -295,17 +295,17 @@\n n(arr, %22\n- \n+-\n %22))%0A%0A%09%7D%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-03-31_16-26-53",
+            "content": "@@ -192,16 +192,18 @@\n len(vet)\n+-1\n ; i++ %7B%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-03-31_16-27-41",
+            "content": "@@ -196,10 +196,8 @@\n vet)\n--1\n ; i+\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-03-31_16-27-53",
+            "content": "@@ -149,17 +149,16 @@\n ) %3E 1 %7B%0A\n-%0A\n %09%09arr :=\n@@ -170,75 +170,8 @@\n t%7B%7D%0A\n-%09%09if len(arr) %3E 1 %7B%0A%09%09%09fmt.Printf(%22%5B %25v %5D%5Cn%22, Join(arr, %22 %22))%0A%09%09%7D%0A%0A\n %09%09fo\n@@ -244,17 +244,16 @@\n 1%5D)%0A%09%09%7D%0A\n-%0A\n %09%09proces\n@@ -261,16 +261,58 @@\n a(arr)%0A%0A\n+%09%09fmt.Printf(%22%5B %25v %5D%5Cn%22, Join(arr, %22 %22))%0A%0A\n %09%7D%0A%0A%09// \n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-03-31_16-32-48",
+            "content": "@@ -166,16 +166,82 @@\n  %5B%5Dint%7B%7D\n+%0A%09%09if len(arr) %3E 1 %7B%0A%09%09%09fmt.Printf(%22%5B %25v %5D%5Cn%22, Join(arr, %22 %22))%0A%09%09%7D\n %0A%0A%09%09for \n@@ -317,74 +317,8 @@\n %09%7D%0A%0A\n-%09%09if len(arr) %3E 1 %7B%0A%09%09%09fmt.Printf(%22%5B %25v %5D%5Cn%22, Join(arr, %22 %22))%0A%09%09%7D%0A\n %09%09pr\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-03-31_16-33-38",
+            "content": "@@ -251,25 +251,8 @@\n %09%7D%0A%0A\n-%09%09processa(arr)%0A%0A\n %09%09if\n@@ -312,16 +312,32 @@\n  %22))%0A%09%09%7D\n+%0A%09%09processa(arr)\n %0A%0A%09%7D%0A%0A%09/\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-03-31_16-33-55",
+            "content": "@@ -264,16 +264,37 @@\n a(arr)%0A%0A\n+%09%09if len(arr) %3E 1 %7B%0A%09\n %09%09fmt.Pr\n@@ -325,16 +325,20 @@\n r, %22 %22))\n+%0A%09%09%7D\n %0A%0A%09%7D%0A%0A%09/\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-03-31_16-34-10",
+            "content": "@@ -147,11 +147,11 @@\n et) \n-%3C 2\n+%3E 1\n  %7B%0A%0A\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-03-31_16-40-19",
+            "content": "@@ -130,16 +130,37 @@\n et...)%0A%0A\n+%09if len(vet) %3C 2 %7B%0A%0A%09\n %09arr := \n@@ -168,16 +168,17 @@\n %5Dint%7B%7D%0A%0A\n+%09\n %09for i :\n@@ -204,16 +204,17 @@\n ; i++ %7B%0A\n+%09\n %09%09arr = \n@@ -246,12 +246,14 @@\n 1%5D)%0A\n+%09\n %09%7D%0A%0A\n+%09\n %09pro\n@@ -264,16 +264,17 @@\n a(arr)%0A%0A\n+%09\n %09fmt.Pri\n@@ -306,16 +306,20 @@\n  %22 %22))%0A%0A\n+%09%7D%0A%0A\n %09// 1. d\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-03-31_16-41-10",
+            "content": "@@ -133,28 +133,9 @@\n ..)%0A\n-%09if len(vet) %3E 0 %7B%0A%09\n+%0A\n %09arr\n@@ -147,17 +147,16 @@\n %5Dint%7B%7D%0A%0A\n-%09\n %09for i :\n@@ -184,17 +184,16 @@\n i++ %7B%0A%09%09\n-%09\n arr = ap\n@@ -223,14 +223,12 @@\n 1%5D)%0A\n-%09\n %09%7D%0A%0A\n-%09\n %09pro\n@@ -239,17 +239,16 @@\n a(arr)%0A%0A\n-%09\n %09fmt.Pri\n@@ -279,18 +279,16 @@\n , %22 %22))%0A\n-%09%7D\n %0A%09// 1. \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-31_16-41-40",
+            "content": "@@ -144,17 +144,17 @@\n (vet) %3E \n-2\n+0\n  %7B%0A%09%09arr\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-31_16-42-01",
+            "content": "@@ -144,17 +144,17 @@\n (vet) %3E \n-1\n+2\n  %7B%0A%09%09arr\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-31_16-44-43",
+            "content": "@@ -263,19 +263,16 @@\n (arr)%0A%0A%09\n-%7D%0A%0A\n %09fmt.Pri\n@@ -296,19 +296,19 @@\n oin(\n-vet\n+arr\n , %22 %22))%0A\n %09// \n@@ -303,16 +303,19 @@\n , %22 %22))%0A\n+%09%7D%0A\n %09// 1. d\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-31_16-44-49",
+            "content": "@@ -129,17 +129,16 @@\n vet...)%0A\n-%0A\n %09if len(\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-03-31_17-03-43",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc processa(vet []int) {\n\t//vetor := append([]int(nil), vet...)\n\n\tif len(vet) > 1 {\n\t\tarr := []int{}\n\n\t\tfor i := 0; i < len(vet)-1; i++ {\n\t\t\tarr = append(arr, vet[i]+vet[i+1])\n\t\t}\n\n\t\tprocessa(arr)\n\n\t}\n\n\tfmt.Printf(\"[ %v ]\\n\", Join(vet, \" \"))\n\t// 1. defina o ponto de parada\n\t// 2. monte o vetor auxiliar com os resultados das somas\n\t// 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n\t// 4. imprima o vetor original\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tline := scanner.Text()\n\tparts := strings.Fields(line)\n\tvet := []int{}\n\tfor _, part := range parts {\n\t\tif value, err := strconv.Atoi(part); err == nil {\n\t\t\tvet = append(vet, value)\n\t\t}\n\t}\n\tprocessa(vet)\n}\n\nfunc Join[T any](v []T, sep string) string {\n\tif len(v) == 0 {\n\t\treturn \"\"\n\t}\n\ts := \"\"\n\tfor i, x := range v {\n\t\tif i > 0 {\n\t\t\ts += sep\n\t\t}\n\t\ts += fmt.Sprintf(\"%v\", x)\n\t}\n\treturn s\n}\n",
+            "lines": "60"
+        }
+    ]
+}

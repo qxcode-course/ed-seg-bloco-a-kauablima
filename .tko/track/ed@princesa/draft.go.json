@@ -197,8 +197,13 @@
         },
         {
             "label": "2026-03-20_00-56-20",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc handlePrint(vetor []int, swordIdx int) {\n\tfmt.Print(\"[\")\n\tfor i, val := range vetor {\n\t\tif i == swordIdx {\n\t\t\tfmt.Printf(\" %v>\", val)\n\t\t} else {\n\t\t\tfmt.Printf(\" %v\", val)\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n\nfunc main() {\n\tvar num, player int\n\tfmt.Scan(&num, &player)\n\n\tvetor := make([]int, num)\n\tfor i := 0; i < num; i++ {\n\t\tvetor[i] = i + 1\n\t}\n\n\tswordIdx := 0\n\tfor i, v := range vetor {\n\t\tif v == player {\n\t\t\tswordIdx = i\n\t\t\tbreak\n\t\t}\n\t}\n\tfor len(vetor) > 1 {\n\t\thandlePrint(vetor, swordIdx)\n\n\t\tkillIdx := (swordIdx + 1) % len(vetor)\n\n\t\tvetor = append(vetor[:killIdx], vetor[killIdx+1:]...)\n\n\t\tswordIdx = killIdx % len(vetor)\n\t}\n\thandlePrint(vetor, swordIdx)\n}\n",
+            "content": "@@ -458,17 +458,16 @@\n %0A%09%09%7D%0A%09%7D%0A\n-%0A\n %09for len\n",
             "lines": "43"
+        },
+        {
+            "label": "2026-03-31_12-25-54",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc handlePrint(vetor []int, swordIdx int) {\n\tfmt.Print(\"[\")\n\tfor i, val := range vetor {\n\t\tif i == swordIdx {\n\t\t\tfmt.Printf(\" %v>\", val)\n\t\t} else {\n\t\t\tfmt.Printf(\" %v\", val)\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n\nfunc main() {\n\tvar num, player int\n\tfmt.Scan(&num, &player)\n\n\tvetor := make([]int, num)\n\tfor i := 0; i < num; i++ {\n\t\tvetor[i] = i + 1\n\t}\n\n\tswordIdx := 0\n\tfor i, v := range vetor {\n\t\tif v == player {\n\t\t\tswordIdx = i\n\t\t\tbreak\n\t\t}\n\t}\n\n\tfor len(vetor) > 1 {\n\t\thandlePrint(vetor, swordIdx)\n\n\t\tkillIdx := (swordIdx + 1) % len(vetor)\n\n\t\tvetor = append(vetor[:killIdx], vetor[killIdx+1:]...)\n\n\t\tswordIdx = killIdx % len(vetor)\n\t}\n\thandlePrint(vetor, swordIdx)\n}\n",
+            "lines": "44"
         }
     ]
 }
