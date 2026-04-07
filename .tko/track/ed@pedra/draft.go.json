@@ -22,8 +22,13 @@
         },
         {
             "label": "2026-03-24_10-10-09",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc myJoin(lista []int, sep string) string {\n\tsaida := \"\"\n\n\tfor i, v := range lista {\n\t\tif i != 0 {\n\t\t\tsaida += sep\n\t\t}\n\t}\n\n\treturn saida\n}\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\n\n\tfor i := 0; i < num; i++ {\n\t\tvar n1, n2 int\n\t\tfmt.Scan(&n1, &n2)\n\n\t}\n}\n",
+            "content": "@@ -81,16 +81,81 @@\n  := %22%22%0A%0A\n+%09for i, v := range lista %7B%0A%09%09if i != 0 %7B%0A%09%09%09saida += sep%0A%09%09%7D%0A%09%7D%0A%0A\n %09return \n",
             "lines": "26"
+        },
+        {
+            "label": "2026-04-05_20-55-02",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc myJoin(lista []int, sep string) string {\n\tsaida := \"\"\n\n\treturn saida\n}\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\n\n\tfor i := 0; i < num; i++ {\n\t\tvar n1, n2 int\n\t\tfmt.Scan(&n1, &n2)\n\n\t}\n}\n",
+            "lines": "20"
         }
     ]
 }

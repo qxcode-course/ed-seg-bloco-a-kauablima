@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_09-40-01",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,218 +23,53 @@\n mt%22%0A\n-%0A\n func \n-returnRest(number int\n+main(\n ) %7B%0A\n-%09if div == 0 %7B%0A%09%09return%0A%09%7D%0A%09div := number / 2%0A%09rest := number %25 2%0A%0A%09fmt.Printf(%22%25v %25v%22, div, rest)%0A%09returnRest(number)%0A%7D%0A%0Afunc main() %7B%0A%09var num int%0A%09fmt.Scan(&num)%0A%0A%09fmt.Println(\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_09-46-29",
+            "content": "@@ -59,16 +59,14 @@\n %09if \n-number %3E\n+div ==\n  0 %7B\n@@ -78,17 +78,16 @@\n turn%0A%09%7D%0A\n-%0A\n %09div := \n@@ -140,10 +140,8 @@\n v %25v\n-%5Cn\n %22, d\n@@ -162,19 +162,22 @@\n urnRest(\n-div\n+number\n )%0A%7D%0A%0Afun\n@@ -195,19 +195,16 @@\n %09var num\n-ber\n  int%0A%09fm\n@@ -218,32 +218,24 @@\n &num\n-ber\n )%0A%0A%09\n-returnRest(number\n+fmt.Println(\n )%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-07_09-54-08",
+            "content": "@@ -66,10 +66,9 @@\n ber \n-==\n+%3E\n  0 %7B\n@@ -81,17 +81,16 @@\n urn%0A%09%7D%0A%0A\n-%0A\n %09div := \n@@ -125,27 +125,8 @@\n  2%0A%0A\n-    number = div %0A%0A\n %09fmt\n@@ -144,22 +144,19 @@\n  %25v%5Cn%22, \n-number\n+div\n , rest)%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_10-03-48",
+            "content": "@@ -82,16 +82,17 @@\n urn%0A%09%7D%0A%0A\n+%0A\n %09div := \n@@ -123,17 +123,20 @@\n er %25 2%0A%0A\n-%09\n+    \n number =\n@@ -143,26 +143,9 @@\n  div\n-%0A%0A%09returnRest(div)\n+ \n %0A%0A%09f\n@@ -179,16 +179,32 @@\n , rest)%0A\n+%09returnRest(div)\n %0A%7D%0A%0Afunc\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-07_15-43-17",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc returnRest(number int) {\n\tif number == 0 {\n\t\treturn\n\t}\n\n\tdiv := number / 2\n\trest := number % 2\n\n\tnumber = div\n\n\treturnRest(div)\n\n\tfmt.Printf(\"%v %v\\n\", number, rest)\n\n}\n\nfunc main() {\n\tvar number int\n\tfmt.Scan(&number)\n\n\treturnRest(number)\n}\n",
+            "lines": "26"
+        }
+    ]
+}

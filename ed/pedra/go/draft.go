@@ -5,12 +5,6 @@ import "fmt"
 func myJoin(lista []int, sep string) string {
 	saida := ""
 
-	for i, v := range lista {
-		if i != 0 {
-			saida += sep
-		}
-	}
-
 	return saida
 }
 
