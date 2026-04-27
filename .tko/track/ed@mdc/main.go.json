@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-12_19-20-06",
+            "content": "@@ -55,10 +55,8 @@\n t %7B%0A\n-%09%0A\n %09ret\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-12_20-02-42",
+            "content": "@@ -56,31 +56,8 @@\n  %7B%0A%09\n-r := a %25 b%0A%0A%09mdc(a, b)%0A\n %0A%09re\n@@ -61,17 +61,17 @@\n %09return \n-r\n+0\n %0A%7D%0A%0Afunc\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-12_20-04-27",
+            "content": "@@ -64,16 +64,28 @@\n  a %25 b%0A%0A\n+%09mdc(a, b)%0A%0A\n %09return \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-12_20-04-42",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc mdc(a, b int) int {\n\tr := a % b\n\n\treturn r\n}\n\nfunc main() {\n\tvar a, b int\n\tfmt.Scan(&a, &b)\n\tfmt.Println(mdc(a, b))\n}\n",
+            "lines": "17"
+        }
+    ]
+}

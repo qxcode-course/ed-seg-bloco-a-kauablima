@@ -1,4 +1,4 @@
-# Imprimindo ao contrário
+j# Imprimindo ao contrário
 
 ![_](../../.tko/cache/6421490caf670842e74ba5681e807eeaa53f9028/base/triangulo/cover.jpg)
 
