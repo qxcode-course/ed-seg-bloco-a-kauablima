@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_19-27-21",
+            "content": "@@ -47,407 +47,15 @@\n %22str\n-conv%22%0A%09%22strings%22%0A)%0A%0Atype MultiSet struct %7B%0A%09data     %5B%5Dint%0A%09size     int%0A%09capacity int%0A%7D%0A%0Afunc NewMultiSet(capacity int) *MultiSet %7B%0A%09return &MultiSet%7B%0A%09%09data:     make(%5B%5Dint, 0, capacity),%0A%09%09size:     0,%0A%09%09capacity: capacity,%0A%09%7D%0A%7D%0A%0Afunc (ms *MultiSet) Insert(value int) %7B%0A%09ms.data = append(ms.data, value)%0A%7D%0A%0Afunc (ms *MultiSet) String() string %7B%0A%09return %22%5B%22 + Join(ms.data%5B:ms.size%5D, %22, %22) + %22%5D%22%0A%7D\n+ings%22%0A)\n %0A%0Afu\n@@ -376,43 +376,8 @@\n 0)%0A%0A\n-%09var ms *MultiSet = NewMultiSet(0)%0A\n %09for\n@@ -598,16 +598,19 @@\n it%22:%0A%09%09%09\n+// \n value, _\n@@ -638,16 +638,19 @@\n %5B1%5D)%0A%09%09%09\n+// \n ms = New\n@@ -685,16 +685,19 @@\n rt%22:%0A%09%09%09\n+// \n for _, p\n@@ -723,16 +723,19 @@\n :%5D %7B%0A%09%09%09\n+// \n %09value, \n@@ -761,16 +761,19 @@\n art)%0A%09%09%09\n+// \n %7D%0A%09%09case\n@@ -781,17 +781,16 @@\n %22show%22:%0A\n-%0A\n %09%09case %22\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-04-27_20-12-32",
+            "content": "@@ -1177,29 +1177,8 @@\n rt)%0A\n-%09%09%09%09ms.Insert(value)%0A\n %09%09%09%7D\n",
+            "lines": "84"
+        },
+        {
+            "label": "2026-04-27_20-14-17",
+            "content": "@@ -1103,16 +1103,111 @@\n nsert%22:%0A\n+%09%09%09for _, part := range args%5B1:%5D %7B%0A%09%09%09%09value, _ := strconv.Atoi(part)%0A%09%09%09%09ms.Insert(value)%0A%09%09%09%7D\n %0A%09%09case \n",
+            "lines": "85"
+        },
+        {
+            "label": "2026-04-27_20-14-35",
+            "content": "@@ -1107,146 +1107,24 @@\n t%22:%0A\n-%09%09%09for _, part := range args%5B1:%5D %7B%0A%09%09%09%09value, _ := strconv.Atoi(part)%0A%09%09%09%09ms.Insert(value)%0A%09%09%09%7D%0A%09%09case %22show%22:%0A%09%09%09fmt.Println(ms.String())\n+%0A%09%09case %22show%22:%0A\n %0A%09%09c\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-04-27_20-15-50",
+            "content": "@@ -354,32 +354,8 @@\n ue)%0A\n-%09ms.size = len(ms.data)%0A\n %7D%0A%0Af\n",
+            "lines": "85"
+        },
+        {
+            "label": "2026-04-27_20-17-04",
+            "content": "@@ -42,16 +42,8 @@\n os%22%0A\n-%09%22sort%22%0A\n %09%22st\n@@ -378,28 +378,8 @@\n ta)%0A\n-%09sort.Ints(ms.data)%0A\n %7D%0A%0Af\n",
+            "lines": "86"
+        },
+        {
+            "label": "2026-04-27_20-18-05",
+            "content": "@@ -288,168 +288,8 @@\n %0A%7D%0A%0A\n-func (ms *MultiSet) Contains (value int )  bool %7B%0A%09%0A%09for i := 0; i %3C ms.size ;i++%7B%0A%09%09v := ms.data%5Bi%5D%0A%09%09if  v == value %7B%0A%09%09%09return true%0A%09%09%7D%0A%09%7D%0A%09return false%0A%7D %0A%0A\n func\n",
+            "lines": "88"
+        },
+        {
+            "label": "2026-04-27_20-21-31",
+            "content": "@@ -333,16 +333,17 @@\n   bool %7B\n+%0A\n %09%0A%09for i\n@@ -1528,24 +1528,27 @@\n ntains%22:%0A%09%09%09\n+// \n value, _ := \n@@ -1573,30 +1573,8 @@\n 1%5D)%0A\n-%09%09%09ms.Contains(value)%0A\n %09%09ca\n",
+            "lines": "99"
+        },
+        {
+            "label": "2026-04-27_20-21-58",
+            "content": "@@ -410,71 +410,26 @@\n %0A%09%09%09\n-fmt.Println(%22true%22)%0A%09%09%09return true%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(%22false%22)\n+return true%0A%09%09%7D%0A%09%7D\n %0A%09re\n",
+            "lines": "99"
+        },
+        {
+            "label": "2026-04-27_20-22-38",
+            "content": "@@ -288,91 +288,8 @@\n %0A%7D%0A%0A\n-func (ms *MultiSet) Erase (value int ) %7B%0A%09for i := 0 ; i %3C ms.size ;i++ %7B%0A%09%09%0A%09%7D%0A%7D%0A%0A\n func\n",
+            "lines": "101"
+        },
+        {
+            "label": "2026-04-28_13-44-01",
+            "content": "@@ -305,24 +305,25 @@\n tiSet) Erase\n+ \n (value int) \n@@ -324,172 +324,52 @@\n  int\n+ \n ) \n-%5B%5Dint%7B%0A%09maps := make(map%5Bint%5Dint)%0A%09newVetor = make(%5B%5Dint, 0)%0A%0A%09for idx, v := range ms.data %7B%0A%09%09rep := ms.data%5Bidx%5D%0A%09%09%0A%09%09if  %7B%0A%09%09%09return %0A%09\n+%7B%0A%09for i := 0 ; i %3C ms.size ;i++ %7B%0A%09%09%0A\n %09%7D%0A\n-%09%7D%0A%0A%09return newVetor%0A\n %7D%0A%0Af\n@@ -391,24 +391,25 @@\n et) Contains\n+ \n (value int) \n@@ -410,16 +410,19 @@\n  int\n+ \n )\n+ \n  bool %7B\n+%09\n %0A%09fo\n@@ -446,14 +446,13 @@\n size\n-;\n  \n+;\n i++\n- \n %7B%0A%09%09\n@@ -472,16 +472,17 @@\n i%5D%0A%09%09if \n+ \n v == val\n@@ -568,16 +568,17 @@\n  false%0A%7D\n+ \n %0A%0Afunc (\n@@ -1596,24 +1596,27 @@\n %22erase%22:%0A%09%09%09\n+// \n value, _ := \n@@ -1641,27 +1641,8 @@\n 1%5D)%0A\n-%09%09%09ms.Erase(value)%0A\n %09%09ca\n",
+            "lines": "107"
+        },
+        {
+            "label": "2026-04-28_13-58-10",
+            "content": "@@ -328,16 +328,170 @@\n  %5B%5Dint%7B%0A\n+%09maps := make(map%5Bint%5Dint)%0A%09newVetor = make(%5B%5Dint, 0)%0A%0A%09for idx, v := range ms.data %7B%0A%09%09rep := ms.data%5Bidx%5D%0A%09%09%0A%09%09if  %7B%0A%09%09%09return %0A%09%09%7D%0A%09%7D%0A%0A%09return newVetor\n %0A%7D%0A%0Afunc\n",
+            "lines": "117"
+        },
+        {
+            "label": "2026-04-28_13-59-32",
+            "content": "@@ -1,340 +1,76 @@\n-package main%0A%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22sort%22%0A%09%22strconv%22%0A%09%22strings%22%0A)%0A%0Atype MultiSet struct %7B%0A%09data     %5B%5Dint%0A%09size     int%0A%09capacity int%0A%7D%0A%0Afunc NewMultiSet(capacity int) *MultiSet %7B%0A%09return &MultiSet%7B%0A%09%09data:     make(%5B%5Dint, 0, capacity),%0A%09%09size:     0,%0A%09%09capacity: capacity,%0A%09%7D%0A%7D%0A%0Afunc (ms *MultiSet) Erase(value int) %5B%5Dint%7B%0A%09\n+@@ -332,325 +332,8 @@%0A nt%257B%250A%0A-%2509copy(newVetor, ms.data)%250A%2509 %250A%2509\n idxE\n@@ -79,18 +79,22 @@\n sed := 0\n-%0A%09\n+%250A%2509\n for idx,\n@@ -113,20 +113,28 @@\n ms.data \n-%7B%0A%09%09\n+%257B%250A%2509%2509\n if  valu\n@@ -144,31 +144,63 @@\n = v \n-%7B%0A%09%09%09i = idx%0A%09%09%7D%0A%09%7D%0A%09%0A%09\n+%257B%250A%2509%2509%2509i = idx%250A%2509%2509%257D%250A%2509%257D%250A%2509%250A%2509\n newV\n@@ -208,18 +208,21 @@\n tor \n-:\n = make(\n-%5B%5D\n+%255B%255D\n int,\n@@ -245,18 +245,28 @@\n apacity)\n-%0A%09\n+%250A%2509%250A%2509\n for i, v\n@@ -278,20 +278,28 @@\n ange ms \n-%7B%0A%09%09\n+%257B%250A%2509%2509\n if i == \n@@ -311,36 +311,64 @@\n ased\n-%7B%0A%09%09%09continue %0A%09%09%7D%0A%0A%09%09\n+%257B%250A%2509%2509%2509continue %250A%2509%2509%257D%250A%250A%2509%2509\n if i \n-%3E\n+%253E\n  len\n@@ -377,21 +377,31 @@\n ewVetor)\n-%7B%0A%09%09%09\n+%257B%250A%2509%2509%2509\n idxTemp \n@@ -409,20 +409,28 @@\n  i-1\n-%0A%09%09%09\n+%250A%2509%2509%2509\n newVetor\n %5Bidx\n@@ -429,1639 +429,271 @@\n etor\n-%5B\n+%255B\n idxTemp\n-%5D\n+%255D\n  = v\n-%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(newVetor)%0A%09return newVetor%0A%7D%0A%0Afunc (ms *MultiSet) Contains(value int) bool %7B%0A%09for i := 0; i %3C ms.size; i++ %7B%0A%09%09v := ms.data%5Bi%5D%0A%09%09if v == value %7B%0A%09%09%09fmt.Println(%22true%22)%0A%09%09%09return true%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(%22false%22)%0A%09return false%0A%7D%0A%0Afunc (ms *MultiSet) Insert(value int) %7B%0A%09ms.data = append(ms.data, value)%0A%09ms.size = len(ms.data)%0A%09sort.Ints(ms.data)%0A%7D%0A%0Afunc (ms *MultiSet) String() string %7B%0A%09return %22%5B%22 + Join(ms.data%5B:ms.size%5D, %22, %22) + %22%5D%22%0A%7D%0A%0Afunc Join(slice %5B%5Dint, sep string) string %7B%0A%09if len(slice) == 0 %7B%0A%09%09return %22%22%0A%09%7D%0A%09result := fmt.Sprintf(%22%25d%22, slice%5B0%5D)%0A%09for _, value := range slice%5B1:%5D %7B%0A%09%09result += sep + fmt.Sprintf(%22%25d%22, value)%0A%09%7D%0A%09return result%0A%7D%0A%0Afunc main() %7B%0A%09var line, cmd string%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09// ms := NewMultiSet(0)%0A%0A%09var ms *MultiSet = NewMultiSet(0)%0A%09for scanner.Scan() %7B%0A%09%09fmt.Print(%22$%22)%0A%09%09line = scanner.Text()%0A%09%09args := strings.Fields(line)%0A%09%09fmt.Println(line)%0A%09%09if len(args) == 0 %7B%0A%09%09%09continue%0A%09%09%7D%0A%09%09cmd = args%5B0%5D%0A%0A%09%09switch cmd %7B%0A%09%09case %22end%22:%0A%09%09%09return%0A%09%09case %22init%22:%0A%09%09%09value, _ := strconv.Atoi(args%5B1%5D)%0A%09%09%09ms = NewMultiSet(value)%0A%09%09case %22insert%22:%0A%09%09%09for _, part := range args%5B1:%5D %7B%0A%09%09%09%09value, _ := strconv.Atoi(part)%0A%09%09%09%09ms.Insert(value)%0A%09%09%09%7D%0A%09%09case %22show%22:%0A%09%09%09fmt.Println(ms.String())%0A%09%09case %22erase%22:%0A%09%09%09value, err := strconv.Atoi(args%5B1%5D)%0A%09%09%09if err != nil %7B%0A%09%09%09%09fmt.Println('value not found')%0A%09%09%09%7D%0A%09%09%09ms.Erase(value)%0A%09%09case %22contains%22:%0A%09%09%09value, _ := strconv.Atoi(args%5B1%5D)%0A%09%09%09ms.Contains(value)%0A%09%09case %22count%22:%0A%09%09%09// value, _ := strconv.Atoi(args%5B1%5D)%0A%09%09case %22unique%22:%0A%09%09case %22clear%22:%0A%09%09default:%0A%09%09%09fmt.Println(%22fail: comando invalido%22)%0A%09%09%7D%0A%09%7D%0A%7D\n+%250A%2509%2509%257D%250A%2509%257D%250A%250A%2509return newVetor%0A %250A%257D%250A%250A%0A@@ -1567,19 +1567,17 @@%0A %2509value, %0A-err%0A+_%0A  := strc%0A@@ -1598,67 +1598,8 @@%0A 1%255D)%250A%0A-%2509%2509%2509if err != nil %257B%250A%2509%2509%2509%2509fmt.Println('value not found')%250A%2509%2509%2509%257D%250A%0A %2509%2509%2509m\n %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-28_14-37-22",
+            "content": "@@ -402,23 +402,15 @@\n %09%09%09i\n-dxErased\n  = idx%0A\n+\n %09%09%7D%0A\n@@ -476,37 +476,32 @@\n i, v := range ms\n-.data\n  %7B%0A%09%09if i == idx\n@@ -550,16 +550,16 @@\n Vetor)%7B%0A\n+\n %09%09%09idxTe\n@@ -561,17 +561,16 @@\n idxTemp \n-:\n = i-1%0A%09%09\n@@ -1942,19 +1942,33 @@\n Println(\n-err\n+'value not found'\n )%0A%09%09%09%7D%0A%09\n",
+            "lines": "129"
+        },
+        {
+            "label": "2026-04-28_14-38-55",
+            "content": "@@ -475,34 +475,8 @@\n ty)%0A\n-%09copy(newVetor, ms.data)%0A%0A\n %09for\n",
+            "lines": "129"
+        },
+        {
+            "label": "2026-04-28_14-40-42",
+            "content": "@@ -328,16 +328,110 @@\n  %5B%5Dint%7B%0A\n+%09idxErased := 0%0A%09for idx, v := range ms.data %7B%0A%09%09if  value == v %7B%0A%09%09%09idxErased = idx%0A%09%09%7D%0A%09%7D%0A%09%0A\n %09newVeto\n@@ -454,16 +454,18 @@\n  ms.size\n+-1\n , ms.cap\n@@ -501,29 +501,14 @@\n a)%0A%0A\n-%09count := 0 %0A\n %09for i\n-dx\n , v \n@@ -535,32 +535,35 @@\n %09if \n- value == v \n+i == idxErased\n %7B%0A%09%09%09co\n-u\n nt\n-++\n+inue\n  %0A%09%09\n@@ -574,40 +574,15 @@\n %09if \n-count %3E 0 %7B%0A%09%09%09newVetor = app\n+i %3E l\n en\n-d\n (new\n@@ -590,52 +590,62 @@\n etor\n-%5B:idx%5D, newVetor%5Bidx+1:%5D...)%0A%09%09%09count = 0\n+)%7B%0A%09%09%09idxTemp := i-1%0A%09%09%09newVetor%5BidxTemp%5D = v\n %0A%09%09\n+%7D%0A%09%7D%0A%0A\n %09fmt\n@@ -667,35 +667,8 @@\n or)%0A\n-%09%09%09return newVetor%0A%09%09%7D%0A%09%7D%0A%0A\n %09ret\n",
+            "lines": "131"
+        },
+        {
+            "label": "2026-04-28_15-51-34",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"sort\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype MultiSet struct {\n\tdata     []int\n\tsize     int\n\tcapacity int\n}\n\nfunc NewMultiSet(capacity int) *MultiSet {\n\treturn &MultiSet{\n\t\tdata:     make([]int, 0, capacity),\n\t\tsize:     0,\n\t\tcapacity: capacity,\n\t}\n}\n\nfunc (ms *MultiSet) Erase(value int) []int{\n\tnewVetor := make([]int, ms.size, ms.capacity)\n\tcopy(newVetor, ms.data)\n\n\tcount := 0 \n\tfor idx, v := range ms.data {\n\t\tif  value == v {\n\t\t\tcount++ \n\t\t}\n\n\t\tif count > 0 {\n\t\t\tnewVetor = append(newVetor[:idx], newVetor[idx+1:]...)\n\t\t\tcount = 0\n\t\t\tfmt.Println(newVetor)\n\t\t\treturn newVetor\n\t\t}\n\t}\n\n\treturn newVetor\n}\n\nfunc (ms *MultiSet) Contains(value int) bool {\n\tfor i := 0; i < ms.size; i++ {\n\t\tv := ms.data[i]\n\t\tif v == value {\n\t\t\tfmt.Println(\"true\")\n\t\t\treturn true\n\t\t}\n\t}\n\tfmt.Println(\"false\")\n\treturn false\n}\n\nfunc (ms *MultiSet) Insert(value int) {\n\tms.data = append(ms.data, value)\n\tms.size = len(ms.data)\n\tsort.Ints(ms.data)\n}\n\nfunc (ms *MultiSet) String() string {\n\treturn \"[\" + Join(ms.data[:ms.size], \", \") + \"]\"\n}\n\nfunc Join(slice []int, sep string) string {\n\tif len(slice) == 0 {\n\t\treturn \"\"\n\t}\n\tresult := fmt.Sprintf(\"%d\", slice[0])\n\tfor _, value := range slice[1:] {\n\t\tresult += sep + fmt.Sprintf(\"%d\", value)\n\t}\n\treturn result\n}\n\nfunc main() {\n\tvar line, cmd string\n\tscanner := bufio.NewScanner(os.Stdin)\n\t// ms := NewMultiSet(0)\n\n\tvar ms *MultiSet = NewMultiSet(0)\n\tfor scanner.Scan() {\n\t\tfmt.Print(\"$\")\n\t\tline = scanner.Text()\n\t\targs := strings.Fields(line)\n\t\tfmt.Println(line)\n\t\tif len(args) == 0 {\n\t\t\tcontinue\n\t\t}\n\t\tcmd = args[0]\n\n\t\tswitch cmd {\n\t\tcase \"end\":\n\t\t\treturn\n\t\tcase \"init\":\n\t\t\tvalue, _ := strconv.Atoi(args[1])\n\t\t\tms = NewMultiSet(value)\n\t\tcase \"insert\":\n\t\t\tfor _, part := range args[1:] {\n\t\t\t\tvalue, _ := strconv.Atoi(part)\n\t\t\t\tms.Insert(value)\n\t\t\t}\n\t\tcase \"show\":\n\t\t\tfmt.Println(ms.String())\n\t\tcase \"erase\":\n\t\t\tvalue, err := strconv.Atoi(args[1])\n\t\t\tif err != nil {\n\t\t\t\tfmt.Println(err)\n\t\t\t}\n\t\t\tms.Erase(value)\n\t\tcase \"contains\":\n\t\t\tvalue, _ := strconv.Atoi(args[1])\n\t\t\tms.Contains(value)\n\t\tcase \"count\":\n\t\t\t// value, _ := strconv.Atoi(args[1])\n\t\tcase \"unique\":\n\t\tcase \"clear\":\n\t\tdefault:\n\t\t\tfmt.Println(\"fail: comando invalido\")\n\t\t}\n\t}\n}\n",
+            "lines": "126"
+        }
+    ]
+}
