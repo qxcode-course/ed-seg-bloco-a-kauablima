@@ -88,9 +88,8 @@ func (v *Vector) Get(index int) bool {
 	if index < 0 || index > v.size {
 		return true
 	}
-
+	
 	return false
-
 }
 
 func (v *Vector) At(index int) (int, error) {
@@ -158,23 +157,25 @@ func (v *Vector) Contains(value int) bool {
 	return false
 }
 
-
-func (v *Vector) Slice(start, end int) string {
+func (v *Vector) Slice(start, end int) *Vector {
 	if start < 0 {
-        start = v.size + start
-    }
-    if end < 0 {
-        end = v.size + end
-    }
-
-	newLen := end - start
-	vetData := make([]int, newLen)
-
-	for i := 0; i < newLen; i++ {
-		vetData[i] = v.data[start + i]
+		start = v.size + start
+	}
+	if end < 0 {
+		end = v.size + end
 	}
 
-	return "[" + Join(vetData[:newLen], ", ") + "]"
+	vetData := Vector{
+		data:     v.data[start:end],
+		size:     end - start,
+		capacity: v.capacity,
+	}
+
+	//for i := 0; i < vetData.size; i++ {
+	//	vetData.data[i] = v.data[start+i]
+	//}
+
+	return &vetData
 }
 
 func main() {
