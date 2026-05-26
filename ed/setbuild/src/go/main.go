@@ -115,15 +115,15 @@ func (set *Set) erase(index int) {
 }
 
 func (set *Set) Erase(value int) {
-	existe := false
+	existe := true
 	for i := 0; i < set.size-1; i++ {
 		if value == set.data[i] {
-			existe = true
+			existe = false
 			set.erase(i)
 		}
 	}
 
-	if !existe {
+	if existe {
 		fmt.Println("value not found")
 	}
 }

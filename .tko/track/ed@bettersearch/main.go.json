@@ -2,8 +2,63 @@
     "patches": [
         {
             "label": "2026-05-19_23-04-25",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc BetterSearch(slice []int, value int) (bool, int) {\n\t_, _ = slice, value\n\treturn false, 0\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Split(scanner.Text(), \" \")\n\tslice := []int{}\n\tfor _, elem := range parts[1 : len(parts)-1] {\n\t\tvalue, _ := strconv.Atoi(elem)\n\t\tslice = append(slice, value)\n\t}\n\tscanner.Scan()\n\tvalue, _ := strconv.Atoi(scanner.Text())\n\tfound, result := BetterSearch(slice, value)\n\tif found {\n\t\tfmt.Println(\"V\", result)\n\t} else {\n\t\tfmt.Println(\"F\", result)\n\t}\n}\n",
+            "content": "@@ -67,31 +67,8 @@\n %0A)%0A%0A\n-type Vetor struct %7B%0A%7D%0A%0A\n func\n@@ -124,277 +124,27 @@\n  %7B%0A%09\n-low := 0%0A%09high := len(slice)%0A%0A%09for low %3C= high %7B%0A%09%09mid := (low + high) / 2%0A%0A%09%09if low == high %7B%0A%09%09%09return false, 0%0A%09%09%7D%0A%0A%09%09if slice%5Bmid%5D == value %7B%0A%09%09%09return true, mid%0A%09%09%7D%0A%0A%09%09if slice%5Bmid%5D %3E value %7B%0A%09%09%09high = mid - 1%0A%09%09%7D%0A%0A%09%09if slice%5Bmid%5D %3C value %7B%0A%09%09%09low = mid + 1%0A%09%09%7D%0A%09%7D\n+_, _ = slice, value\n %0A%09re\n",
             "lines": "33"
+        },
+        {
+            "label": "2026-05-20_10-40-04",
+            "content": "@@ -177,63 +177,8 @@\n e)%0A%0A\n-%09for _, v :=range slice%7B%0A%09%09if value != v %7B%0A%09%09%09%0A%09%09%7D%0A%09%7D%0A%0A\n %09for\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-20_10-48-00",
+            "content": "@@ -63,16 +63,39 @@\n ngs%22%0A)%0A%0A\n+type Vetor struct %7B%0A%7D%0A%0A\n func Bet\n@@ -216,16 +216,19 @@\n  != v %7B%0A\n+%09%09%09\n %0A%09%09%7D%0A%09%7D%0A\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-05-20_10-49-16",
+            "content": "@@ -67,190 +67,8 @@\n %0A)%0A%0A\n-func Reserve (newCapacity int, vetor %5B%5Dint) %7B%0A%09vetData := make(%5B%5Dint, newCapacity)%0A%0A%09for i := range vetor %7B%0A%09%09vetData%5Bi%5D = vetor%5Bi%5D%0A%09%7D%0A%0A%09vetor = vetData%0A%09v.capacity = newCapacity%0A%7D%0A%0A\n func\n@@ -148,18 +148,16 @@\n n(slice)\n--1\n %0A%0A%09for _\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-05-20_10-52-44",
+            "content": "@@ -330,16 +330,70 @@\n n(slice)\n+-1%0A%0A%09for _, v :=range slice%7B%0A%09%09if value != v %7B%0A%0A%09%09%7D%0A%09%7D\n %0A%0A%09for l\n@@ -432,16 +432,59 @@\n h) / 2%0A%0A\n+%09%09if low == high %7B%0A%09%09%09return false, 0%0A%09%09%7D%0A%0A\n %09%09if sli\n@@ -630,10 +630,8 @@\n %0A%09%7D%0A\n-%09%0A\n %09ret\n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-05-20_10-53-42",
+            "content": "@@ -63,16 +63,196 @@\n ngs%22%0A)%0A%0A\n+func Reserve (newCapacity int, vetor %5B%5Dint) %7B%0A%09vetData := make(%5B%5Dint, newCapacity)%0A%0A%09for i := range vetor %7B%0A%09%09vetData%5Bi%5D = vetor%5Bi%5D%0A%09%7D%0A%0A%09vetor = vetData%0A%09v.capacity = newCapacity%0A%7D\n %0A%0Afunc B\n@@ -529,16 +529,17 @@\n %0A%09%09%7D%0A%09%7D%0A\n+%09\n %0A%09return\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-05-20_10-53-50",
+            "content": "@@ -150,18 +150,16 @@\n n(slice)\n--1\n %0A%0A%09for l\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-20_10-53-57",
+            "content": "@@ -150,16 +150,18 @@\n n(slice)\n+-1\n %0A%0A%09for l\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-20_10-54-06",
+            "content": "@@ -64,16 +64,17 @@\n gs%22%0A)%0A%0A%0A\n+%0A\n func Bet\n@@ -155,10 +155,9 @@\n ce)%0A\n-%09\n %0A\n+\n %09for\n@@ -202,51 +202,8 @@\n  2%0A%0A\n-%09%09if low == high %7B%0A%09%09%09return false, 0%0A%09%09%7D%0A%0A\n %09%09if\n@@ -346,19 +346,20 @@\n + 1%0A%09%09%7D%0A\n-\n %09%7D%0A\n+%0A\n %09return \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-20_10-54-23",
+            "content": "@@ -149,18 +149,16 @@\n n(slice)\n--1\n %0A%09%0A%09for \n@@ -198,16 +198,59 @@\n h) / 2%0A%0A\n+%09%09if low == high %7B%0A%09%09%09return false, 0%0A%09%09%7D%0A%0A\n %09%09if sli\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-05-20_10-54-33",
+            "content": "@@ -366,19 +366,17 @@\n  false, \n-low\n+0\n %0A%7D%0A%0Afunc\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-05-20_10-57-36",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\n\nfunc BetterSearch(slice []int, value int) (bool, int) {\n\tlow := 0\n\thigh := len(slice)-1\n\t\n\tfor low <= high {\n\t\tmid := (low + high) / 2\n\n\t\tif slice[mid] == value {\n\t\t\treturn true, mid\n\t\t}\n\n\t\tif slice[mid] > value {\n\t\t\thigh = mid - 1\n\t\t}\n\n\t\tif slice[mid] < value {\n\t\t\tlow = mid + 1\n\t\t}\n\t}\n\treturn false, low\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Split(scanner.Text(), \" \")\n\tslice := []int{}\n\tfor _, elem := range parts[1 : len(parts)-1] {\n\t\tvalue, _ := strconv.Atoi(elem)\n\t\tslice = append(slice, value)\n\t}\n\tscanner.Scan()\n\tvalue, _ := strconv.Atoi(scanner.Text())\n\tfound, result := BetterSearch(slice, value)\n\tif found {\n\t\tfmt.Println(\"V\", result)\n\t} else {\n\t\tfmt.Println(\"F\", result)\n\t}\n}\n",
+            "lines": "51"
         }
     ]
 }

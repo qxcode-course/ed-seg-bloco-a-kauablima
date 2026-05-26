@@ -42,29 +42,30 @@ func tostrrev(vet []int) string {
 
 // reverse: inverte os elementos do slice
 func reverse(vet []int) {
-	newArr := make([]int, 0, len(vet))
-	copy(newArr, vet)
-
-	if len(newArr) <= 1 {
+	if len(vet) <= 1 {
 		return
 	}
 
-	idx := len(newArr) - 1
+	idx := len(vet) - 1
 
-	newArr[0], newArr[idx] = newArr[idx], newArr[0]
-	reverse(newArr[1:idx])
+	vet[0], vet[idx] = vet[idx], vet[0]
+	reverse(vet[1:idx])
 }
 
 // sum: soma dos elementos do slice
 func sum(vet []int) int {
-	_ = vet
-	return 0
+	if len(vet) == 0 {
+		return 0
+	}
+	return vet[0] + sum(vet[1:])
 }
 
 // mult: produto dos elementos do slice
 func mult(vet []int) int {
-	_ = vet
-	return 0
+	if len(vet) == 0 {
+		return 1 // Elemento neutro da multiplicação
+	}
+	return vet[0] * mult(vet[1:])
 }
 
 // min: retorna o índice e valor do menor valor
@@ -72,8 +73,26 @@ func mult(vet []int) int {
 // var rec func(v []int) (int, int)
 // para fazer uma recursão que retorna valor e índice
 func min(vet []int) int {
-	_ = vet
-	return 0
+	if len(vet) == 0 {
+		return -1
+	}
+
+	var rec func(v []int, currentIdx int) (int, int)
+	rec = func(v []int, currentIdx int) (int, int) {
+		if len(v) == 1 {
+			return v[0], currentIdx
+		}
+
+		minVal, minIdx := rec(v[1:], currentIdx+1)
+
+		if v[0] <= minVal {
+			return v[0], currentIdx
+		}
+		return minVal, minIdx
+	}
+
+	_, index := rec(vet, 0)
+	return index
 }
 
 func main() {

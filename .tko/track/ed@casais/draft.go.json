@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_14-14-40",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,196 +23,53 @@\n mt%22%0A\n-%0Afunc Query() %7B%0A%0A%7D%0A%0Afunc main() %7B%0A%09var num int%0A%09fmt.Scan(&num)%0A%0A%09var vet %5B%5Dint%0A%09for i := range num %7B%0A        var value int %0A        fmt.Scan(&value)%0A%0A%09%09vet%5Bi%5D = value%0A%09%7D%0A%0A%09fmt.Println(vet)%0A\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-26_14-19-52",
+            "content": "@@ -90,30 +90,20 @@\n %0A%0A%09v\n-et := make(%5B%5Dint, num)\n+ar vet %5B%5Dint\n %0A%09fo\n@@ -173,25 +173,11 @@\n ue)%0A\n-        %0A        \n+%0A%09%09\n vet%5B\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_14-21-10",
+            "content": "@@ -219,118 +219,25 @@\n %09%7D%0A%0A\n-    count := 0%0A    for idx, val := range vet%7B%0A        if val == vet%5Bi+1%5D%7B%0A            count++ %0A        %7D%0A    %7D\n+%09fmt.Println(vet)\n %0A%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_14-28-36",
+            "content": "@@ -131,18 +131,24 @@\n e num %7B%0A\n-%09%09\n+        \n var valu\n@@ -152,19 +152,26 @@\n alue int\n-%0A%09%09\n+ %0A        \n fmt.Scan\n@@ -179,19 +179,33 @@\n &value)%0A\n-%0A%09%09\n+        %0A        \n vet%5Bi%5D =\n@@ -215,17 +215,20 @@\n lue%0A%09%7D%0A%0A\n-%09\n+    \n count :=\n@@ -234,17 +234,24 @@\n = 0%0A\n-%09\n+    \n for i\n-, _\n+dx, val\n  := \n@@ -263,22 +263,24 @@\n  vet\n- \n %7B%0A\n-%09%09if vet%5Bi%5D\n+        if val\n  == \n@@ -291,49 +291,46 @@\n i+1%5D\n- \n %7B%0A\n-%09%09%09count++%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(count)\n+            count++ %0A        %7D%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-26_14-29-57",
+            "content": "@@ -204,41 +204,30 @@\n = 0%0A\n-%0A\n %09for i\n+, _\n  := \n-0; i %3C len(vet)-1; i++\n+range vet\n  %7B%0A%09\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_14-31-00",
+            "content": "@@ -30,125 +30,18 @@\n unc \n-Converter(vet %5B%5Dint) %7B%0A    for i := range vet%7B%0A        if vet%5Bi%5D %3C 0 %7B%0A            vet%5Bi%5D = vet%5Bi%5D*-1%0A        %7D%0A    %7D\n+Query() %7B%0A\n %0A%7D%0A%0A\n@@ -192,27 +192,8 @@\n %09%7D%0A%0A\n-    Converter(vet)%0A\n %09cou\n@@ -200,16 +200,17 @@\n nt := 0%0A\n+%0A\n %09for i :\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-26_14-34-12",
+            "content": "@@ -402,27 +402,8 @@\n t++%0A\n-            return%0A\n %09%09%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-26_14-35-59",
+            "content": "@@ -414,16 +414,14 @@\n     \n-continue\n+return\n %0A%09%09%7D\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-26_14-36-06",
+            "content": "@@ -398,16 +398,37 @@\n count++%0A\n+            continue%0A\n %09%09%7D%0A%09%7D%0A%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-26_14-36-16",
+            "content": "@@ -318,153 +318,8 @@\n et)%0A\n-    %0A    for i:= 0; i %3C len(vet);i++%7B%0A        for j := 0; j %3C len(vet)-1; j++ %7B%0A            vet%5Bj%5D , vet%5Bj+1%5D = vet%5Bj+1%5D, vet%5Bj%5D%0A        %7D%0A    %7D%0A\n %09cou\n@@ -406,16 +406,16 @@\n %09%09%7D%0A%09%7D%0A%0A\n-\n %09fmt.Pri\n@@ -426,10 +426,11 @@\n (count)%0A\n+%0A\n %7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-26_14-51-20",
+            "content": "@@ -18,36 +18,13 @@\n ort \n-(%0A%09\n %22fmt%22\n-%0A%09%22slices%22%0A%09%22sort%22%0A)\n %0A%0Afu\n@@ -327,24 +327,143 @@\n     \n-slices.Sort(vet)\n+for i:= 0; i %3C len(vet);i++%7B%0A        for j := 0; j %3C len(vet)-1; j++ %7B%0A            vet%5Bj%5D , vet%5Bj+1%5D = vet%5Bj+1%5D, vet%5Bj%5D%0A        %7D%0A    %7D\n %0A%09co\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-26_14-51-50",
+            "content": "@@ -1,8 +1,29 @@\n+@@ -1,495 +1,498 @@%0A-\n package \n@@ -30,24 +30,36 @@\n main\n-%0A%0A\n+%250A%250A\n import \n-%22fmt%22%0A%0A\n+%2522fmt%2522%250A%250A\n func\n@@ -77,91 +77,155 @@\n vet \n-%5B%5Dint) %7B%0A%09for i := range vet %7B%0A%09%09if vet%5Bi%5D %3C 0 %7B%0A%09%09%09vet%5Bi%5D = vet%5Bi%5D * -1%0A%09%09%7D%0A%09%7D%0A%7D%0A%0A\n+%255B%255Dint) %257B%250A%2509for i := range vet %257B%250A%2509%2509if vet%255Bi%255D %253C 0 %257B%250A%2509%2509%2509vet%255Bi%255D = vet%255Bi%255D * -1%250A%2509%2509%257D%250A%2509%257D%250A%257D%250A%250A\n func\n@@ -232,19 +232,25 @@\n  main() \n-%7B%0A%09\n+%257B%250A%2509\n var num \n@@ -252,18 +252,22 @@\n  num int\n-%0A%09\n+%250A%2509\n fmt.Scan\n@@ -272,19 +272,25 @@\n an(&num)\n-%0A%0A%09\n+%250A%250A%2509\n vet := m\n@@ -297,10 +297,14 @@\n ake(\n-%5B%5D\n+%255B%255D\n int,\n@@ -308,18 +308,22 @@\n nt, num)\n-%0A%09\n+%250A%2509\n for i :=\n@@ -333,20 +333,28 @@\n nge num \n-%7B%0A%09%09\n+%257B%250A%2509%2509\n var valu\n@@ -358,19 +358,25 @@\n alue int\n-%0A%09%09\n+%250A%2509%2509\n fmt.Scan\n@@ -387,32 +387,56 @@\n lue)\n-%0A%0A%09%09vet%5Bi%5D = value%0A%09%7D%0A%0A%09\n+%250A%250A%2509%2509vet%255Bi%255D = value%250A%2509%257D%250A%250A%2509\n Conv\n@@ -445,19 +445,25 @@\n ter(vet)\n-%0A%0A%09\n+%250A%250A%2509\n frequenc\n@@ -480,19 +480,27 @@\n (map\n-%5Bint%5Dint)%0A%09\n+%255Bint%255Dint)%250A%2509\n for \n@@ -521,20 +521,28 @@\n nge vet \n-%7B%0A%09%09\n+%257B%250A%2509%2509\n frequenc\n@@ -547,23 +547,39 @@\n ncia\n-%5B\n+%255B\n valor\n-%5D++%0A%09%7D%0A%0A%09\n+%255D++%250A%2509%257D%250A%250A%2509\n coun\n@@ -584,18 +584,22 @@\n unt := 0\n-%0A%09\n+%250A%2509\n for _, q\n@@ -625,77 +625,790 @@\n cia \n-%7B%0A%09%09if qtd %3E 1 %7B%0A%09%09%09count += (qtd - 1)%0A%09%09%7D%0A%09%7D%0A    %0A%09fmt.Println(count)%0A%7D\n+%257B%250A%2509%2509if qtd %253E 1 %257B%250A%2509%2509%2509count += (qtd - 1)%250A%2509%2509%257D%250A%2509%257D%250A%2509fmt.Println(count)%250A%257D%0A+@@ -33,16 +33,24 @@%250A slices%252522%25250A%250A+%252509%252522sort%252522%25250A%250A )%25250A%25250Afunc %250A@@ -72,17 +72,20 @@%250A %25255Dint) %25257B%25250A%250A-%252509%250A+    %250A for i :=%250A@@ -94,21 +94,26 @@%250A ange vet%250A- %250A %25257B%25250A%250A-%252509%252509%250A+        %250A if vet%25255Bi%250A@@ -120,19 +120,28 @@%250A %25255D %25253C 0 %25257B%25250A%250A-%252509%252509%252509%250A+            %250A vet%25255Bi%25255D =%250A@@ -151,19 +151,26 @@%250A t%25255Bi%25255D%250A- * -1%25250A%252509%252509%25257D%25250A%252509%250A+*-1%25250A        %25257D%25250A    %250A %25257D%25250A%25257D%25250A%250A@@ -318,17 +318,20 @@%250A lue%25250A%252509%25257D%25250A%25250A%250A-%252509%250A+    %250A Converte%250A@@ -337,18 +337,25 @@%250A er(vet)%25250A%250A-%25250A%252509%250A+    %25250A    %250A slices.S%0A %250A\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-05-26_14-54-16",
+            "content": "@@ -293,98 +293,185 @@\n )%0A%0A%09\n-count := 0%0A%09for i := 0; i %3C len(vet)-1; i++ %7B%0A%09%09if vet%5Bi%5D == vet%5Bi+1%5D %7B%0A%09%09%09count++\n+frequencia := make(map%5Bint%5Dint)%0A%09for _, valor := range vet %7B%0A%09%09frequencia%5Bvalor%5D++%0A%09%7D%0A%0A%09count := 0%0A%09for _, qtd := range frequencia %7B%0A%09%09if qtd %3E 1 %7B%0A%09%09%09count += (qtd - 1)\n %0A%09%09%7D%0A%09%7D%0A\n %0A%09fm\n@@ -466,16 +466,20 @@\n %0A%09%09%7D%0A%09%7D%0A\n+    \n %0A%09fmt.Pr\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-26_14-54-35",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc Converter(vet []int) {\n\tfor i := range vet {\n\t\tif vet[i] < 0 {\n\t\t\tvet[i] = vet[i] * -1\n\t\t}\n\t}\n}\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\n\n\tvet := make([]int, num)\n\tfor i := range num {\n\t\tvar value int\n\t\tfmt.Scan(&value)\n\n\t\tvet[i] = value\n\t}\n\n\tConverter(vet)\n\n\tcount := 0\n\tfor i := 0; i < len(vet)-1; i++ {\n\t\tif vet[i] == vet[i+1] {\n\t\t\tcount++\n\t\t}\n\t}\n\n\tfmt.Println(count)\n}\n",
+            "lines": "35"
+        }
+    ]
+}
