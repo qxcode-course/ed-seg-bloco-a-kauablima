@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-29_20-04-47",
+            "content": "@@ -23,247 +23,53 @@\n mt%22%0A\n-%0Atype Queue struct %7B%0A    gasosa int%0A    dist int%0A%7D%0A%0Afunc main() %7B%0A    var num int%0A    fmt.Scan(&num)%0A%0A    vet := make(%5B%5DQueue, num)%0A%0A    for i := 0; i %3C num; i++ %7B%0A        fmt.Scan(&vet%5Bi%5D.gasosa, &vet%5Bi%5D.dist)%0A    %7D%0A%0A%0A%0A    fmt.Println(vet\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-30_01-29-22",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -40,17 +40,20 @@\n truct %7B%0A\n-%09\n+    \n gasosa i\n@@ -59,153 +59,18 @@\n int%0A\n-%09dist   int%0A%7D%0A%0Afunc Driven(vet %5B%5DQueue) int %7B%0A%09count := 0%0A%09for i := range vet %7B%0A%09%09if vet%5Bi%5D.gasosa %3E= vet%5Bi%5D.dist %7B%0A%09%09%09count++%0A%09%09%7D%0A%09%7D%0A%09return cou\n+    dist i\n nt%0A%7D\n@@ -85,17 +85,20 @@\n ain() %7B%0A\n-%09\n+    \n var num \n@@ -101,17 +101,20 @@\n num int%0A\n-%09\n+    \n fmt.Scan\n@@ -121,17 +121,20 @@\n (&num)%0A%0A\n-%09\n+    \n vet := m\n@@ -152,17 +152,20 @@\n , num)%0A%0A\n-%09\n+    \n for i :=\n@@ -187,10 +187,16 @@\n + %7B%0A\n-%09%09\n+        \n fmt.\n@@ -234,13 +234,21 @@\n st)%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A%0A%0A    \n fmt.\n@@ -259,19 +259,11 @@\n tln(\n-Driven(\n vet)\n-)\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-30_01-34-20",
+            "content": "@@ -153,16 +153,17 @@\n gasosa %3E\n+=\n  vet%5Bi%5D.\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-30_01-35-36",
+            "content": "@@ -156,10 +156,9 @@\n osa \n-==\n+%3E\n  vet\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-30_01-35-45",
+            "content": "@@ -152,17 +152,18 @@\n .gasosa \n-%3C\n+==\n  vet%5Bi%5D.\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-30_01-35-52",
+            "content": "@@ -153,17 +153,16 @@\n gasosa %3C\n-=\n  vet%5Bi%5D.\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-30_01-35-57",
+            "content": "@@ -156,9 +156,9 @@\n osa \n-%3E\n+%3C\n = ve\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-30_01-36-05",
+            "content": "@@ -137,26 +137,12 @@\n t %7B%0A\n-        storage :=\n+%09%09if\n  vet\n@@ -156,9 +156,10 @@\n osa \n--\n+%3E=\n  vet\n@@ -170,33 +170,25 @@\n dist\n-%0A        count += storage\n+ %7B%0A%09%09%09count++%0A%09%09%7D\n %0A%09%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-30_02-14-35",
+            "content": "@@ -103,107 +103,40 @@\n t %7B%0A\n-    totalGas := 0%0A%09totalDist := 0%0A%09tanqueAtual := 0%0A%09inicio := 0%0A%0A    for i := 0 ; i %3C len(vet);i++\n+%09count := 0%0A%09for i := range vet \n %7B%0A  \n@@ -145,18 +145,17 @@\n     \n+s\n to\n-talGas +\n+rage :\n = ve\n@@ -169,29 +169,10 @@\n sosa\n-%0A        totalDist +=\n+ -\n  vet\n@@ -180,25 +180,24 @@\n i%5D.dist%0A\n-%0A\n         \n %0A       \n@@ -192,167 +192,27 @@\n     \n-%0A        tanqueAtual += vet%5Bi%5D.gasosa - vet%5Bi%5D.dist%0A%0A        if tanqueAtual %3C 0 %7B%0A            inicio = i + 1 %0A            tanqueAtual = 0 %0A        %7D%0A    %7D%0A    \n+count += storage%0A%09%7D\n %0A%09re\n@@ -220,14 +220,13 @@\n urn \n-inicio\n+count\n %0A%7D%0A%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-30_02-20-32",
+            "content": "@@ -99,16 +99,50 @@\n ) int %7B%0A\n+    totalGas := 0%0A%09totalDist := 0%0A\n %09tanqueA\n@@ -200,16 +200,93 @@\n t);i++%7B%0A\n+        totalGas += vet%5Bi%5D.gasosa%0A        totalDist += vet%5Bi%5D.dist%0A%0A        %0A\n         \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-30_02-22-55",
+            "content": "@@ -161,17 +161,16 @@\n en(vet);\n- \n i++%7B%0A   \n@@ -226,16 +226,103 @@\n         \n+if tanqueAtual %3C 0 %7B%0A            inicio = i + 1 %0A            tanqueAtual = 0 %0A        %7D\n %0A    %7D%0A \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-30_02-23-22",
+            "content": "@@ -231,95 +231,8 @@\n     \n-if tanqueAtual %3C 0 %7B%0A            inicio = i + 1 %0A            tanqueAtual = 0 %0A        %7D\n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-30_02-23-47",
+            "content": "@@ -104,26 +104,32 @@\n  %7B%0A%09\n-gasNow\n+tanqueAtual\n  := 0%0A%09\n-start\n+inicio\n  := \n@@ -175,22 +175,27 @@\n         \n-gasNow\n+tanqueAtual\n  += vet%5B\n@@ -230,22 +230,27 @@\n      if \n-gasNow\n+tanqueAtual\n  %3C 0 %7B%0A \n@@ -260,21 +260,22 @@\n         \n-start\n+inicio\n  = i + 1\n@@ -292,14 +292,19 @@\n     \n-gasNow\n+tanqueAtual\n  = 0\n@@ -338,13 +338,14 @@\n urn \n-start\n+inicio\n %0A%7D%0A%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-30_02-25-15",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Queue struct {\n\tgasosa int\n\tdist   int\n}\n\nfunc Driven(vet []Queue) int {\n\tgasNow := 0\n\tstart := 0\n\n    for i := 0 ; i < len(vet); i++{\n        gasNow += vet[i].gasosa - vet[i].dist\n\n        if gasNow < 0 {\n            start = i + 1 \n            gasNow = 0 \n        }\n    }\n    \n\treturn start\n}\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\n\n\tvet := make([]Queue, num)\n\n\tfor i := 0; i < num; i++ {\n\t\tfmt.Scan(&vet[i].gasosa, &vet[i].dist)\n\t}\n\n\tfmt.Println(Driven(vet))\n}\n",
+            "lines": "37"
+        }
+    ]
+}

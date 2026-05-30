@@ -13,14 +13,14 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@vector
-- ed@backtrack
+- ed@bfs
+- ed@linear
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@vector
-selected_index: 10
+selected: ed@caminhao
+selected_index: 14

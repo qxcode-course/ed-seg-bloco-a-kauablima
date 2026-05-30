@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-05-05_13-53-06",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,69 +23,8 @@\n mt%22%0A\n-type Node struct %7B%0A    next int %0A%7D%0A%0Atype Editor struct %7B%0A%0A%7D%0A%0A\n func\n@@ -37,9 +37,12 @@\n ) %7B%0A\n-%09\n+    \n fmt.\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-27_12-59-19",
+            "content": "package main\n\nimport \"fmt\"\ntype Node struct {\n    next int \n}\n\ntype Editor struct {\n\n}\n\nfunc main() {\n\tfmt.Println(\"Hello, World!\")\n}\n",
+            "lines": "14"
         }
     ]
 }

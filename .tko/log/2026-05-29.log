@@ -1,0 +1,11 @@
+2026-05-29 20:04:07, MOVE, v:1, k:ed@casais, mode:PICK
+2026-05-29 20:04:08, EXEC, v:1, k:ed@casais, mode:FULL, rate:75
+2026-05-29 20:04:11, EXEC, v:1, k:ed@casais, mode:FULL, rate:75
+2026-05-29 20:04:37, MOVE, v:1, k:ed@bufferring, mode:PICK
+2026-05-29 20:04:38, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0, size:110
+2026-05-29 20:04:39, MOVE, v:1, k:ed@bufferring, mode:BACK
+2026-05-29 20:04:46, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-29 20:04:47, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:0, size:5
+2026-05-29 20:05:23, MOVE, v:1, k:ed@casais, mode:BACK
+2026-05-29 20:05:50, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-29 20:06:35, MOVE, v:1, k:ed@caminhao, mode:EDIT

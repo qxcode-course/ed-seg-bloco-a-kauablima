@@ -1,0 +1,45 @@
+2026-05-30 01:29:21, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-30 01:29:22, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:0, size:22
+2026-05-30 01:34:10, MOVE, v:1, k:ed@caminhao, mode:EDIT
+2026-05-30 01:34:19, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-30 01:34:20, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:25, size:31
+2026-05-30 01:35:36, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:25, size:31
+2026-05-30 01:35:45, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:0, size:31
+2026-05-30 01:35:52, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:0, size:31
+2026-05-30 01:35:57, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:0, size:31
+2026-05-30 01:36:05, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:25, size:31
+2026-05-30 01:36:02, MOVE, v:1, k:ed@caminhao, mode:EDIT
+2026-05-30 01:36:13, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:25
+2026-05-30 01:37:49, EXEC, v:1, k:ed@caminhao, mode:LOCK, rate:0
+2026-05-30 01:36:02, MOVE, v:1, k:ed@caminhao, mode:EDIT
+2026-05-30 02:14:13, MOVE, v:1, k:ed@caminhao, mode:EDIT
+2026-05-30 02:14:35, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:0, size:30
+2026-05-30 02:14:32, MOVE, v:1, k:ed@caminhao, mode:EDIT
+2026-05-30 02:19:14, MOVE, v:1, k:ed@caminhao, mode:EDIT
+2026-05-30 02:20:32, EXEC, v:1, k:ed@caminhao, mode:LOCK, rate:100, size:43
+2026-05-30 02:20:38, MOVE, v:1, k:ed@caminhao, mode:BACK
+2026-05-30 02:20:48, MOVE, v:1, k:ed@caminhao, mode:BACK
+2026-05-30 02:20:49, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-30 02:20:50, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:100
+2026-05-30 02:20:53, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:100
+2026-05-30 02:20:54, MOVE, v:1, k:ed@caminhao, mode:BACK
+2026-05-30 02:21:38, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-30 02:21:39, MOVE, v:1, k:ed@caminhao, mode:BACK
+2026-05-30 02:21:42, SELF, v:1, k:ed@caminhao, self:1, rate:100
+2026-05-30 02:21:53, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-30 02:21:54, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:100
+2026-05-30 02:21:54, MOVE, v:1, k:ed@caminhao, mode:BACK
+2026-05-30 02:22:10, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-30 02:22:55, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-30 02:22:55, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:100, size:37
+2026-05-30 02:22:56, MOVE, v:1, k:ed@caminhao, mode:BACK
+2026-05-30 02:23:21, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-30 02:23:22, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:0, size:34
+2026-05-30 02:23:47, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:100, size:37
+2026-05-30 02:23:48, MOVE, v:1, k:ed@caminhao, mode:BACK
+2026-05-30 02:23:52, SELF, v:1, k:ed@caminhao, self:1, rate:100
+2026-05-30 02:23:26, MOVE, v:1, k:ed@caminhao, mode:EDIT
+2026-05-30 02:25:15, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-05-30 02:25:15, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:100, size:37
+2026-05-30 02:25:16, MOVE, v:1, k:ed@caminhao, mode:BACK
+2026-05-30 02:25:13, MOVE, v:1, k:ed@caminhao, mode:EDIT
