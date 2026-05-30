@@ -43,3 +43,40 @@
 2026-05-30 02:25:15, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:100, size:37
 2026-05-30 02:25:16, MOVE, v:1, k:ed@caminhao, mode:BACK
 2026-05-30 02:25:13, MOVE, v:1, k:ed@caminhao, mode:EDIT
+2026-05-30 02:27:29, MOVE, v:1, k:ed@casais, mode:PICK
+2026-05-30 02:27:29, EXEC, v:1, k:ed@casais, mode:FULL, rate:75
+2026-05-30 02:27:33, MOVE, v:1, k:ed@casais, mode:BACK
+2026-05-30 02:27:35, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-05-30 02:27:36, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0
+2026-05-30 02:25:13, MOVE, v:1, k:ed@caminhao, mode:EDIT
+2026-05-30 02:32:00, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0, size:24
+2026-05-30 02:32:19, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:34:15, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:37:23, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:39:06, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:42:23, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:44:16, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:46:25, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0, size:46
+2026-05-30 02:46:50, EXEC, v:1, k:ed@pedra, mode:FULL, rate:41, size:46
+2026-05-30 02:47:03, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:47:03, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:50:42, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0, size:47
+2026-05-30 02:50:50, EXEC, v:1, k:ed@pedra, mode:FULL, rate:25, size:47
+2026-05-30 02:51:02, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0, size:47
+2026-05-30 02:51:08, EXEC, v:1, k:ed@pedra, mode:FULL, rate:75, size:47
+2026-05-30 02:51:28, EXEC, v:1, k:ed@pedra, mode:FULL, rate:100, size:47
+2026-05-30 02:51:30, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-05-30 02:51:39, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:53:53, SELF, v:1, k:ed@pedra, self:1, rate:100
+2026-05-30 02:51:39, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:56:03, MOVE, v:1, k:ed@casais, mode:PICK
+2026-05-30 02:56:05, MOVE, v:1, k:ed@casais, mode:BACK
+2026-05-30 02:56:09, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-05-30 02:56:10, EXEC, v:1, k:ed@pedra, mode:FULL, rate:66, size:45
+2026-05-30 02:56:23, EXEC, v:1, k:ed@pedra, mode:FULL, rate:66, size:46
+2026-05-30 02:56:19, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:58:28, EXEC, v:1, k:ed@pedra, mode:FULL, rate:75, size:46
+2026-05-30 02:59:16, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 02:59:44, EXEC, v:1, k:ed@pedra, mode:FULL, rate:100, size:46
+2026-05-30 02:59:53, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-05-30 02:59:56, SELF, v:1, k:ed@pedra, self:1, rate:100

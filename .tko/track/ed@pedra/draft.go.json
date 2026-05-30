@@ -27,8 +27,68 @@
         },
         {
             "label": "2026-04-05_20-55-02",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc myJoin(lista []int, sep string) string {\n\tsaida := \"\"\n\n\treturn saida\n}\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\n\n\tfor i := 0; i < num; i++ {\n\t\tvar n1, n2 int\n\t\tfmt.Scan(&n1, &n2)\n\n\t}\n}\n",
+            "content": "@@ -25,238 +25,197 @@\n t%22%0A%0A\n-type Players struct %7B%0A%09p1 int%0A%09p2 int%0A%7D%0A%0Afunc Champion(vet Players) %7B%0A%0A%7D%0A%0Afunc main() %7B%0A%09var num int%0A%09fmt.Scan(&num)%0A%0A%09vet := make(%5B%5DPlayers, num)%0A%09for i := 0; i %3C num; i++ %7B%0A%09%09fmt.Scan(&vet%5Bi%5D.p1, &vet%5Bi%5D.p2)%0A%09%7D%0A%0A%09fmt.Println(vet)\n+func myJoin(lista %5B%5Dint, sep string) string %7B%0A%09saida := %22%22%0A%0A%09return saida%0A%7D%0A%0Afunc main() %7B%0A%09var num int%0A%09fmt.Scan(&num)%0A%0A%09for i := 0; i %3C num; i++ %7B%0A%09%09var n1, n2 int%0A%09%09fmt.Scan(&n1, &n2)%0A%0A%09%7D\n %0A%7D%0A\n",
             "lines": "20"
+        },
+        {
+            "label": "2026-05-30_02-32-00",
+            "content": "@@ -18,26 +18,13 @@\n ort \n-(%0A%09\n %22fmt%22\n-%0A%09%22math%22%0A)\n %0A%0Aty\n@@ -51,27 +51,19 @@\n %09p1 \n-float64%0A%09p2 float64\n+int%0A%09p2 int\n %0A%7D%0A%0A\n@@ -80,18 +80,16 @@\n ion(vet \n-%5B%5D\n Players)\n@@ -93,234 +93,10 @@\n rs) \n-int %7B%0A%09winner := -1%0A%0A%09for i := 0 ; i %3C len(vet);i++%7B%0A%09%09if vet%5Bi%5D.p1 %3E= 10 && vet%5Bi%5D.p2 %3E= 10 %7B%0A%09%09%09difference := math.Abs(vet%5Bi%5D.p1 - vet%5Bi%5D.p2)%0A%0A%09%09%09if difference %3C float64(winner) %7B%0A%09%09%09%09winner = i%0A%09%09%09%7D%0A%0A%09%09%7D%0A%09%7D%0A%0A%09return winner \n+%7B%0A\n %0A%7D%0A%0A\n@@ -240,123 +240,23 @@\n %7D%0A%0A%09\n-result := Champion(vet)%0A%09if result != -1 %7B%0A%09%09fmt.Println(Champion(vet))%0A%09%7D else %7B%0A%09%09fmt.Println(%22Sem ganhador%22)%0A%09%7D%0A%09\n+fmt.Println(vet)\n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-30_02-46-25",
+            "content": "@@ -274,17 +274,17 @@\n ference \n-%3E\n+%3C\n  float64\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-30_02-46-50",
+            "content": "@@ -135,24 +135,8 @@\n = -1\n-%0A%09firstCase := 0\n %0A%0A%09f\n@@ -140,24 +140,25 @@\n %0A%09for i := 0\n+ \n ; i %3C len(ve\n@@ -160,21 +160,19 @@\n en(vet);\n- \n i++\n- \n %7B%0A%09%09if v\n@@ -274,17 +274,17 @@\n ference \n-%3C\n+%3E\n  float64\n@@ -288,52 +288,17 @@\n t64(\n-firstCase) %7B%0A%09%09%09%09firstCase = int(difference)\n+winner) %7B\n %0A%09%09%09\n@@ -337,16 +337,17 @@\n n winner\n+ \n %0A%7D%0A%0Afunc\n@@ -598,10 +598,12 @@\n or%22)%0A%09%7D%0A\n+%09%0A\n %7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-30_02-50-42",
+            "content": "@@ -291,17 +291,17 @@\n ference \n-%3E\n+%3C\n  float64\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-30_02-50-50",
+            "content": "@@ -150,14 +150,9 @@\n  := \n-999999\n+0\n %0A%0A%09f\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-30_02-51-02",
+            "content": "@@ -296,17 +296,17 @@\n ference \n-%3C\n+%3E\n  float64\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-30_02-51-08",
+            "content": "@@ -636,17 +636,17 @@\n rintln(%22\n-s\n+S\n em ganha\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-30_02-51-28",
+            "content": "@@ -137,48 +137,28 @@\n -1%0A%09\n-count := math.Abs(vet%5B0%5D.p1 - vet%5B0%5D.p2)\n+firstCase := 999999%0A\n %0A%09fo\n@@ -302,28 +302,49 @@\n e %3C \n-count %7B%0A%09%09%09%09count = \n+float64(firstCase) %7B%0A%09%09%09%09firstCase = int(\n diff\n@@ -349,16 +349,17 @@\n fference\n+)\n %0A%09%09%09%09win\n@@ -371,16 +371,17 @@\n  i%0A%09%09%09%7D%0A\n+%0A\n %09%09%7D%0A%09%7D%0A%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-30_02-56-10",
+            "content": "@@ -178,10 +178,8 @@\n p2)%0A\n-%09%0A\n %09for\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-30_02-56-23",
+            "content": "@@ -174,16 +174,17 @@\n %5B0%5D.p2)%0A\n+%09\n %0A%09for i \n@@ -319,17 +319,16 @@\n erence %3C\n-=\n  count %7B\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-30_02-58-28",
+            "content": "@@ -137,25 +137,48 @@\n -1%0A%09\n-var \n count \n-float64\n+:= math.Abs(vet%5B0%5D.p1 - vet%5B0%5D.p2)\n %0A%0A%09f\n@@ -309,24 +309,8 @@\n %09%09if\n- winner == -1 %7C%7C\n  dif\n@@ -318,16 +318,17 @@\n erence %3C\n+=\n  count %7B\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-30_02-59-44",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\ntype Players struct {\n\tp1 float64\n\tp2 float64\n}\n\nfunc Champion(vet []Players) int {\n\twinner := -1\n\tvar count float64\n\n\tfor i := 0; i < len(vet); i++ {\n\t\tif vet[i].p1 >= 10 && vet[i].p2 >= 10 {\n\t\t\tdifference := math.Abs(vet[i].p1 - vet[i].p2)\n\n\t\t\tif winner == -1 || difference < count {\n\t\t\t\tcount = difference\n\t\t\t\twinner = i\n\t\t\t}\n\t\t}\n\t}\n\n\treturn winner\n}\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\n\n\tvet := make([]Players, num)\n\tfor i := 0; i < num; i++ {\n\t\tfmt.Scan(&vet[i].p1, &vet[i].p2)\n\t}\n\n\tresult := Champion(vet)\n\tif result != -1 {\n\t\tfmt.Println(Champion(vet))\n\t} else {\n\t\tfmt.Println(\"sem ganhador\")\n\t}\n}\n",
+            "lines": "46"
         }
     ]
 }

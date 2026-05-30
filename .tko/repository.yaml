@@ -15,12 +15,13 @@ sources:
 expanded:
 - ed@bfs
 - ed@linear
+- ed@basic
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@caminhao
-selected_index: 14
+selected: ed@rec
+selected_index: 9
