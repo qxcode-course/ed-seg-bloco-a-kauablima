@@ -1,0 +1,13 @@
+2026-05-31 17:59:18, MOVE, v:1, k:ed@wordsearch, mode:PICK
+2026-05-31 18:03:31, MOVE, v:1, k:ed@wordsearch, mode:BACK
+2026-05-31 18:08:19, MOVE, v:1, k:ed@wordsearch, mode:PICK
+2026-05-31 18:08:20, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:25, size:65
+2026-05-31 18:08:21, MOVE, v:1, k:ed@wordsearch, mode:BACK
+2026-05-31 18:17:48, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-05-31 18:17:48, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-05-31 18:22:29, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-05-31 18:22:29, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-05-31 18:25:27, MOVE, v:1, k:ed@subset_sum, mode:PICK
+2026-05-31 18:25:28, EXEC, v:1, k:ed@subset_sum, mode:FULL, rate:0
+2026-05-31 18:25:30, MOVE, v:1, k:ed@subset_sum, mode:BACK
+2026-05-31 18:25:37, MOVE, v:1, k:ed@subset_sum, mode:PICK

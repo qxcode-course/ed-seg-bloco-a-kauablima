@@ -67,8 +67,33 @@
         },
         {
             "label": "2026-05-26_14-54-35",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc Converter(vet []int) {\n\tfor i := range vet {\n\t\tif vet[i] < 0 {\n\t\t\tvet[i] = vet[i] * -1\n\t\t}\n\t}\n}\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\n\n\tvet := make([]int, num)\n\tfor i := range num {\n\t\tvar value int\n\t\tfmt.Scan(&value)\n\n\t\tvet[i] = value\n\t}\n\n\tConverter(vet)\n\n\tcount := 0\n\tfor i := 0; i < len(vet)-1; i++ {\n\t\tif vet[i] == vet[i+1] {\n\t\t\tcount++\n\t\t}\n\t}\n\n\tfmt.Println(count)\n}\n",
+            "content": "@@ -358,22 +358,11 @@\n vet%5B\n-(\n i+1\n-)%25len(vet)\n %5D %7B%0A\n",
             "lines": "35"
+        },
+        {
+            "label": "2026-06-01_00-07-17",
+            "content": "@@ -325,16 +325,18 @@\n len(vet)\n+-1\n ; i++ %7B%0A\n@@ -358,11 +358,22 @@\n vet%5B\n+(\n i+1\n+)%25len(vet)\n %5D %7B%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-01_00-07-57",
+            "content": "@@ -356,22 +356,11 @@\n vet%5B\n-(\n i+1\n-)%25len(vet)\n %5D %7B%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-01_00-08-04",
+            "content": "@@ -172,79 +172,51 @@\n )%0A%0A%09\n-descasados := make(map%5Bint%5Dint)%0A%09casais := 0%0A%0A%09for i := 0; i %3C num; i++\n+vet := make(%5B%5Dint, num)%0A%09for i := range num\n  %7B%0A%09\n@@ -220,22 +220,21 @@\n %7B%0A%09%09var \n-animal\n+value\n  int%0A%09%09f\n@@ -246,127 +246,144 @@\n an(&\n-animal)%0A%0A%09%09par := -animal%0A%0A%09%09if descasados%5Bpar%5D %3E 0 %7B%0A%09%09%09descasados%5Bpar%5D--%0A%09%09%09casais++%0A%09%09%7D else %7B%0A%09%09%09descasados%5Banimal%5D\n+value)%0A%0A%09%09vet%5Bi%5D = value%0A%09%7D%0A%0A%09Converter(vet)%0A%0A%09count := 0%0A%09for i := 0; i %3C len(vet); i++ %7B%0A%09%09if vet%5Bi%5D == vet%5B(i+1)%25len(vet)%5D %7B%0A%09%09%09count\n ++%0A%09\n@@ -407,13 +407,12 @@\n ln(c\n-asais\n+ount\n )%0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-01_00-11-46",
+            "content": "@@ -21,16 +21,118 @@\n  %22fmt%22%0A%0A\n+func Converter(vet %5B%5Dint) %7B%0A%09for i := range vet %7B%0A%09%09if vet%5Bi%5D %3C 0 %7B%0A%09%09%09vet%5Bi%5D = vet%5Bi%5D * -1%0A%09%09%7D%0A%09%7D%0A%7D%0A%0A\n func mai\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-01_00-12-24",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num int\n\tfmt.Scan(&num)\n\n\tdescasados := make(map[int]int)\n\tcasais := 0\n\n\tfor i := 0; i < num; i++ {\n\t\tvar animal int\n\t\tfmt.Scan(&animal)\n\n\t\tpar := -animal\n\n\t\tif descasados[par] > 0 {\n\t\t\tdescasados[par]--\n\t\t\tcasais++\n\t\t} else {\n\t\t\tdescasados[animal]++\n\t\t}\n\t}\n\n\tfmt.Println(casais)\n}\n",
+            "lines": "27"
         }
     ]
 }

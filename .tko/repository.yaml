@@ -13,9 +13,11 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@bfs
-- ed@linear
 - ed@basic
+- ed@backtrack
+- ed@map_set
+- ed@dfs
+- ed@bfs
 flags:
   inbox: all
   panel: skills
@@ -23,5 +25,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@rec
-selected_index: 9
+selected: ed@ilhas
+selected_index: 31

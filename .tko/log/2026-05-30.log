@@ -80,3 +80,29 @@
 2026-05-30 02:59:44, EXEC, v:1, k:ed@pedra, mode:FULL, rate:100, size:46
 2026-05-30 02:59:53, MOVE, v:1, k:ed@pedra, mode:BACK
 2026-05-30 02:59:56, SELF, v:1, k:ed@pedra, self:1, rate:100
+2026-05-30 03:03:41, MOVE, v:1, k:ed@bufferring, mode:PICK
+2026-05-30 03:03:42, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0
+2026-05-30 03:03:50, MOVE, v:1, k:ed@bufferring, mode:BACK
+2026-05-30 03:03:07, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-05-30 03:04:42, MOVE, v:1, k:ed@especiais, mode:DOWN
+2026-05-30 03:04:46, MOVE, v:1, k:ed@buscas, mode:DOWN
+2026-05-30 03:04:46, MOVE, v:1, k:ed@rotacoes, mode:DOWN
+2026-05-30 03:04:47, MOVE, v:1, k:ed@alternando, mode:DOWN
+2026-05-30 16:22:59, MOVE, v:1, k:ed@bufferring, mode:PICK
+2026-05-30 16:23:00, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0
+2026-05-30 16:23:06, MOVE, v:1, k:ed@bufferring, mode:BACK
+2026-05-30 16:23:11, MOVE, v:1, k:ed@queimando, mode:PICK
+2026-05-30 16:23:11, EXEC, v:1, k:ed@queimando, mode:FULL, size:77, fail:COMP
+2026-05-30 16:23:12, MOVE, v:1, k:ed@queimando, mode:BACK
+2026-05-30 16:23:16, MOVE, v:1, k:ed@queimando, mode:PICK
+2026-05-30 16:23:16, EXEC, v:1, k:ed@queimando, mode:FULL, fail:COMP
+2026-05-30 16:23:16, MOVE, v:1, k:ed@queimando, mode:BACK
+2026-05-30 16:23:29, MOVE, v:1, k:ed@prin_list1, mode:PICK
+2026-05-30 16:23:30, MOVE, v:1, k:ed@prin_list1, mode:BACK
+2026-05-30 16:25:27, MOVE, v:1, k:ed@wordsearch, mode:PICK
+2026-05-30 16:25:28, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:25, size:62
+2026-05-30 16:25:35, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:25
+2026-05-30 16:25:36, MOVE, v:1, k:ed@wordsearch, mode:BACK
+2026-05-30 16:25:39, MOVE, v:1, k:ed@wordsearch, mode:PICK
+2026-05-30 16:25:46, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-05-30 16:26:19, MOVE, v:1, k:ed@wordsearch, mode:EDIT

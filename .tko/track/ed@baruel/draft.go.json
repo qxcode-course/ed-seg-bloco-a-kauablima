@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_00-11-53",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,334 +37,39 @@\n ) %7B%0A\n-%09var num int%0A%09fmt.Scan(&num)%0A%09mapSet := make(map%5Bint%5Dint)%0A%0A%09for i := 0; i %3C num; i++ %7B%0A%09%09var value int%0A%09%09fmt.Scan(value)%0A%0A%09%09val, ok := mapSet%5Bvalue%5D%0A%09%09if ok %7B%0A%09%09%09val++%0A%09%09%7D else %7B%0A%09%09%09mapSet%5Bvalue%5D = 1%0A%09%09%7D%0A%09%7D%0A%0A%09mostValue := 0%0A%09for _, val := range mapSet %7B%0A%09%09if val %3E mostValue %7B%0A%09%09%09mostValue = val%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(mostValue\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_00-25-18",
+            "content": "@@ -44,40 +44,17 @@\n var \n-totalAlbum, totalPossui\n+num\n  int%0A\n-    \n+%09\n fmt.\n@@ -63,122 +63,41 @@\n an(&\n-totalAlbum)%0A%09fmt.Scan(&totalPossui)%0A%0A%09mapSet := make(map%5Bint%5Dint)%0A%0A    var repetidos %5B%5Dint %0A    var faltando %5B%5Dint\n+num)%0A%09mapSet := make(map%5Bint%5Dint)\n %0A%0A%09f\n@@ -115,19 +115,11 @@\n i %3C \n-totalPossui\n+num\n ; i+\n@@ -149,17 +149,16 @@\n mt.Scan(\n-&\n value)%0A%0A\n@@ -163,12 +163,11 @@\n %0A%0A%09%09\n-if _\n+val\n , ok\n@@ -187,263 +187,95 @@\n lue%5D\n-; ok %7B%0A%09%09%09repetidos = append(repetidos, value)%0A%09%09%7D%0A%0A%09%09mapSet%5Bvalue%5D++%0A%09%7D%0A%0A    for i := 1; i %3C= totalAlbum; i++ %7B%0A%09%09_, ok := mapSet%5Bi%5D%0A%09%09if !ok %7B%0A%09%09%09faltando = append(faltando, i)%0A%09%09%7D%0A%09%7D%0A%0A    if len(repetidos) == 0 %7B%0A%09%09fmt.Println(%22N%22)%0A%09%7D else %7B%0A%09\n+%0A%09%09if ok %7B%0A%09%09%09val++%0A%09%09%7D else %7B%0A%09%09%09mapSet%5Bvalue%5D = 1%0A%09%09%7D%0A%09%7D%0A%0A%09mostValue := 0%0A\n %09for \n-i\n+_\n , v\n+al\n  := \n@@ -284,245 +284,67 @@\n nge \n-repetidos\n+mapSet\n  %7B%0A\n-%09\n %09%09if \n-i %3E 0 %7B%0A%09%09%09%09fmt.Print(%22 %22)%0A%09%09%09%7D%0A%09%09%09fmt.Print(v)%0A%09%09%7D%0A%09%09fmt.Println()%0A%09%7D%0A%0A    if len(faltando) == 0\n+val %3E mostValue\n  %7B%0A%09%09\n-fmt.Println(%22N%22)%0A%09%7D else %7B%0A%09%09for i, v := range faltando %7B%0A%09%09%09if i %3E 0 %7B%0A%09%09%09%09fmt.Print(%22 %22)%0A%09%09%09%7D%0A%09%09%09fmt.Print(v)%0A%09%09%7D%0A%09\n+%09mostValue = val%0A%09%09%7D%0A%09%7D%0A%0A\n %09fmt\n@@ -356,13 +356,17 @@\n tln(\n-)%0A%09%7D%0A%0A\n+mostValue)\n %0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_00-39-22",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar totalAlbum, totalPossui int\n    fmt.Scan(&totalAlbum)\n\tfmt.Scan(&totalPossui)\n\n\tmapSet := make(map[int]int)\n\n    var repetidos []int \n    var faltando []int\n\n\tfor i := 0; i < totalPossui; i++ {\n\t\tvar value int\n\t\tfmt.Scan(&value)\n\n\t\tif _, ok := mapSet[value]; ok {\n\t\t\trepetidos = append(repetidos, value)\n\t\t}\n\n\t\tmapSet[value]++\n\t}\n\n    for i := 1; i <= totalAlbum; i++ {\n\t\t_, ok := mapSet[i]\n\t\tif !ok {\n\t\t\tfaltando = append(faltando, i)\n\t\t}\n\t}\n\n    if len(repetidos) == 0 {\n\t\tfmt.Println(\"N\")\n\t} else {\n\t\tfor i, v := range repetidos {\n\t\t\tif i > 0 {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\t\t\tfmt.Print(v)\n\t\t}\n\t\tfmt.Println()\n\t}\n\n    if len(faltando) == 0 {\n\t\tfmt.Println(\"N\")\n\t} else {\n\t\tfor i, v := range faltando {\n\t\t\tif i > 0 {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\t\t\tfmt.Print(v)\n\t\t}\n\t\tfmt.Println()\n\t}\n\n\n}\n",
+            "lines": "58"
+        }
+    ]
+}

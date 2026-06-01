@@ -13,7 +13,7 @@ Lembre de submeter seu código no LeetCode para validar a solução.
 ![_](https://assets.leetcode.com/uploads/2020/11/04/word2.jpg)
 
 ```txt
-- Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
+- Input: board = [[ "A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
 - Output: true
 ```
 
