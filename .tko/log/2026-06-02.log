@@ -1,0 +1,4 @@
+2026-06-02 11:10:10, MOVE, v:1, k:ed@subset_sum, mode:PICK
+2026-06-02 11:10:11, EXEC, v:1, k:ed@subset_sum, mode:FULL, rate:100
+2026-06-02 11:10:13, MOVE, v:1, k:ed@subset_sum, mode:BACK
+2026-06-02 11:10:30, SELF, v:1, k:ed@subset_sum, self:1, rate:100, study:10

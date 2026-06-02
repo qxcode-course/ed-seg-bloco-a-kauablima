@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-04-28_16-33-14",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -23,545 +23,53 @@\n mt%22%0A\n-%0A%0A\n func \n-search(vet %5B%5Dint, idx, curSum int, sum int, count int) bool\n+main()\n  %7B%0A    \n-if curSum == sum %7B%0A        return true%0A    %7D%0A%0A    if count == len(vet) %7C%7C curSum %3E sum %7B%0A        return false %0A    %7D%0A%0A    nextIdx := (idx+1)%25len(vet)%0A%0A    return search(vet, nextIdx, curSum+vet%5Bidx%5D, sum, count+1 ) %7C%7C%0A            search(vet, nextIdx, curSum, sum, count+1)%0A%7D%0A%0Afunc main() %7B%0A    var num, sum int%0A    fmt.Scan(&num, &sum)%0A%0A    vet := make(%5B%5Dint, num)%0A    for i := range num %7B%0A        fmt.Scan(&vet%5Bi%5D)%0A    %7D%0A%0A    fmt.Println(search(vet, 0, 0, sum, 0)\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-13-32",
+            "content": "package main\nimport \"fmt\"\n\n\nfunc search(vet []int, idx, curSum int, sum int, count int) bool {\n    if curSum == sum {\n        return true\n    }\n\n    if count == len(vet) || curSum > sum {\n        return false \n    }\n\n    nextIdx := (idx+1)%len(vet)\n\n    return search(vet, nextIdx, curSum+vet[idx], sum, count+1 ) ||\n            search(vet, nextIdx, curSum, sum, count+1)\n}\n\nfunc main() {\n    var num, sum int\n    fmt.Scan(&num, &sum)\n\n    vet := make([]int, num)\n    for i := range num {\n        fmt.Scan(&vet[i])\n    }\n\n    fmt.Println(search(vet, 0, 0, sum, 0))\n}\n",
+            "lines": "30"
         }
     ]
 }

@@ -89,3 +89,16 @@
 2026-06-01 16:20:01, MOVE, v:1, k:ed@ilhas, mode:BACK
 2026-06-01 16:19:55, MOVE, v:1, k:ed@ilhas, mode:EDIT
 2026-06-01 16:21:31, SELF, v:1, k:ed@ilhas, self:1, rate:100, study:20
+2026-06-01 16:19:55, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-06-01 16:57:14, MOVE, v:1, k:ed@subset_sum, mode:PICK
+2026-06-01 16:57:16, EXEC, v:1, k:ed@subset_sum, mode:FULL, rate:0
+2026-06-01 16:59:20, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-06-01 17:02:07, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-06-01 17:04:24, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-06-01 17:07:03, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-06-01 17:09:23, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-06-01 17:10:56, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-06-01 17:13:32, EXEC, v:1, k:ed@subset_sum, mode:FULL, rate:100, size:30
+2026-06-01 17:13:36, MOVE, v:1, k:ed@subset_sum, mode:BACK
+2026-06-01 17:13:27, MOVE, v:1, k:ed@subset_sum, mode:EDIT
+2026-06-01 17:13:27, MOVE, v:1, k:ed@subset_sum, mode:EDIT

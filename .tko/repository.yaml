@@ -15,9 +15,9 @@ sources:
 expanded:
 - ed@basic
 - ed@backtrack
-- ed@map_set
-- ed@dfs
 - ed@bfs
+- ed@dfs
+- ed@map_set
 flags:
   inbox: all
   panel: skills
@@ -25,5 +25,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@ilhas
-selected_index: 31
+selected: ed@subset_sum
+selected_index: 20
