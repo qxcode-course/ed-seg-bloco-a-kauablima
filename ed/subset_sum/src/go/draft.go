@@ -21,7 +21,7 @@ func main() {
     var num, sum int
     fmt.Scan(&num, &sum)
 
-    vet := make([]int, num)
+    vet := make([]int, num) 
     for i := range num {
         fmt.Scan(&vet[i])
     }

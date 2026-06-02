@@ -13,11 +13,11 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@basic
-- ed@backtrack
-- ed@bfs
-- ed@dfs
 - ed@map_set
+- ed@basic
+- ed@dfs
+- ed@bfs
+- ed@backtrack
 flags:
   inbox: all
   panel: skills
