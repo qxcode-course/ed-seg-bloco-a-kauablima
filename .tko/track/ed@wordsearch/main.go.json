@@ -7,8 +7,53 @@
         },
         {
             "label": "2026-05-31_18-08-20",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n// N\u00e3o mude a assinatura desta fun\u00e7\u00e3o, ela \u00e9 a fun\u00e7\u00e3o chamada pelo LeetCode\nfunc exist(grid [][]byte, word string) bool {\n\t_, _ = grid, word\n\treturn false\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\t\n\tvar word string\n\tfmt.Sscanf(scanner.Text(), \"%s\", &word)\n\tgrid := make([][]byte, 0)\n\n\tfor scanner.Scan() {\n\t\tgrid = append(grid, []byte(scanner.Text()))\n\t}\n\n\tif exist(grid, word) {\n\t\tfmt.Println(\"true\")\n\t} else {\n\t\tfmt.Println(\"false\")\n\t}\n}\n",
+            "content": "@@ -182,17 +182,16 @@\n d, word%0A\n-%0A\n %09return \n@@ -197,17 +197,16 @@\n  false%0A%7D\n-%09\n %0A%0Afunc m\n",
             "lines": "32"
+        },
+        {
+            "label": "2026-06-02_11-38-23",
+            "content": "@@ -168,300 +168,43 @@\n  %7B%0A%09\n-wordsFound := 0 %0A%09for i := range grid %7B%0A%09%09for j := range grid%5Bi%5D %7B%0A%09%09%09if i == '1' %7B%0A%09%09%09%09wordsFound++%0A%09%09%09%09dfs(grid, i, j, word)%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09if wordsFound == len(word) %7B%0A%09%09return true%0A%09%7D%0A%0A%09return false%0A%7D%09%0A%0Afunc dfs(grid %5B%5D%5B%5Dbyte, i,j int, word string)%7B%0A%09if %7B%0A%09%09return %0A%09%7D%0A%0A%09grid%5Bi%5D%5Bj%5D = '0'%0A%7D\n+_, _ = grid, word%0A%0A%09return false%0A%7D%09\n %0A%0Afu\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-02_18-28-49",
+            "content": "@@ -424,42 +424,8 @@\n %0A%09if\n-  i %3E= len(grid) %7C%7C j %3E= len(grid)\n  %7B%0A%09\n@@ -458,32 +458,8 @@\n  '0'\n-%0A%0A%09dfs(grid, i, j, word)\n %0A%7D%0A%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-06-02_21-28-56",
+            "content": "@@ -168,549 +168,178 @@\n  %7B%0A%09\n-rows := len(grid)%0A%09cols := len(grid%5B0%5D)%0A%0A%09var backtrak func(r,c, k int) bool%0A%0A%09backtrak = func(r,c, k int) bool %7B%0A%09%09if k == len(word) %7B%0A%09%09%09return true%0A%09%09%7D%0A%0A%09%09if r %3C 0 %7C%7C r %3E= rows %7C%7C c %3C 0 %7C%7C c %3E= cols %7C%7C grid%5Br%5D%5Bc%5D != word%5Bk%5D %7B%0A%09%09%09return false%0A%09%09%7D%0A%09%09%0A%0A%09%09temp := grid%5Br%5D%5Bc%5D%0A%09%09grid%5Br%5D%5Bc%5D := '#'%0A%0A%09%09found := backtrak(r+1,c,k+1) %7C%7C backtrak(r-1, c, k+1) %7C%7C backtrak(r,c+1,k+1) %7C%7C backtrak(r,c-1,k+1)%0A%0A%09%09grid%5Br%5D%5Bc%5D = temp%0A%0A%09%09return found%0A%09%7D%0A%0A%09for i := range grid %7B%0A%09%09for j := range grid%5Bi%5D %7B%0A%09%09%09if grid%5Bi%5D%5Bj%5D == word%5B0%5D && backtrak(i, j, 0\n+wordsFound := 0 %0A%09for i := range grid %7B%0A%09%09for j := range grid%5Bi%5D %7B%0A%09%09%09if i == '1' %7B%0A%09%09%09%09wordsFound++%0A%09%09%09%09dfs(grid, i, j, word)%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09if wordsFound == len(word\n ) %7B%0A\n-%09%09\n %09%09re\n@@ -348,25 +348,16 @@\n rn true%0A\n-%09%09%09%7D%0A%09%09%7D%0A\n %09%7D%0A%0A%09ret\n@@ -366,17 +366,16 @@\n n false%0A\n-%0A\n %7D%09%0A%0Afunc\n@@ -475,19 +475,8 @@\n %09%7D%0A%0A\n-%09if %7B%0A%0A%09%7D%0A%0A\n %09gri\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-06-02_21-54-11",
+            "content": "@@ -710,28 +710,27 @@\n %0A%09%09%09%09return \n-fals\n+tru\n e%0A%09%09%09%7D%0A%09%09%7D%0A%09\n@@ -751,16 +751,173 @@\n se%0A%0A%7D%09%0A%0A\n+func dfs(grid %5B%5D%5B%5Dbyte, i,j int, word string)%7B%0A%09if  i %3E= len(grid) %7C%7C j %3E= len(grid) %7B%0A%09%09return %0A%09%7D%0A%0A%09if %7B%0A%0A%09%7D%0A%0A%09grid%5Bi%5D%5Bj%5D = '0'%0A%0A%09dfs(grid, i, j, word)%0A%7D%0A%0A\n func mai\n",
+            "lines": "79"
+        },
+        {
+            "label": "2026-06-02_21-54-26",
+            "content": "@@ -451,16 +451,17 @@\n d%5Br%5D%5Bc%5D \n+:\n = '#'%0A%0A%09\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-06-02_21-54-36",
+            "content": "@@ -709,27 +709,28 @@\n %0A%09%09%09%09return \n-tru\n+fals\n e%0A%09%09%09%7D%0A%09%09%7D%0A%09\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-06-02_21-54-43",
+            "content": "@@ -483,15 +483,13 @@\n ak(r\n--\n++\n 1,\n- \n c,\n- \n k+1)\n@@ -494,37 +494,39 @@\n 1) %7C%7C backtrak(r\n-+\n+-\n 1,\n+ \n c,\n+ \n k+1) %7C%7C backtrak\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-06-02_21-56-28",
+            "content": "@@ -221,21 +221,17 @@\n ktra\n-cking\n+k\n  func(r,\n  c, \n@@ -218,33 +218,32 @@\n backtrak func(r,\n- \n c, k int) bool%0A%0A\n@@ -250,21 +250,17 @@\n %09backtra\n-cking\n+k\n  = func(\n@@ -261,17 +261,16 @@\n  func(r,\n- \n c, k int\n@@ -408,24 +408,27 @@\n rn false%0A%09%09%7D\n+%0A%09%09\n %0A%0A%09%09temp := \n@@ -476,21 +476,17 @@\n  backtra\n-cking\n+k\n (r-1, c,\n@@ -498,55 +498,38 @@\n  %7C%7C \n-%0A%09%09%09%09 \n backtra\n-cking\n+k\n (r+1,\n- \n c,\n- \n k+1) %7C%7C\n-%0A%09%09%09%09\n  backtra\n ckin\n@@ -528,30 +528,24 @@\n ktra\n-cking(r, c-\n+k(r,c+\n 1,\n- \n k+1) %7C%7C \n %0A%09%09%09\n@@ -544,45 +544,27 @@\n  %7C%7C \n-%0A%09%09%09%09 \n backtra\n-cking(r, c+\n+k(r,c-\n 1,\n- \n k+1)\n-%0A%09%09%09%09 \n %0A%0A%09%09\n@@ -597,17 +597,16 @@\n n found%0A\n-%0A\n %09%7D%0A%0A%09for\n@@ -693,13 +693,9 @@\n ktra\n-cking\n+k\n (i, \n@@ -745,17 +745,19 @@\n n false%0A\n-%7D\n+%0A%7D%09\n %0A%0Afunc m\n@@ -819,16 +819,17 @@\n .Scan()%0A\n+%09\n %0A%09var wo\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-06-02_22-00-04",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n// N\u00e3o mude a assinatura desta fun\u00e7\u00e3o, ela \u00e9 a fun\u00e7\u00e3o chamada pelo LeetCode\nfunc exist(grid [][]byte, word string) bool {\n\trows := len(grid)\n\tcols := len(grid[0])\n\n\tvar backtracking func(r, c, k int) bool\n\n\tbacktracking = func(r, c, k int) bool {\n\t\tif k == len(word) {\n\t\t\treturn true\n\t\t}\n\n\t\tif r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] != word[k] {\n\t\t\treturn false\n\t\t}\n\n\t\ttemp := grid[r][c]\n\t\tgrid[r][c] = '#'\n\n\t\tfound := backtracking(r-1, c, k+1) || \n\t\t\t\t backtracking(r+1, c, k+1) ||\n\t\t\t\t backtracking(r, c-1, k+1) || \n\t\t\t\t backtracking(r, c+1, k+1)\n\t\t\t\t \n\n\t\tgrid[r][c] = temp\n\n\t\treturn found\n\n\t}\n\n\tfor i := range grid {\n\t\tfor j := range grid[i] {\n\t\t\tif grid[i][j] == word[0] && backtracking(i, j, 0) {\n\t\t\t\treturn true\n\t\t\t}\n\t\t}\n\t}\n\n\treturn false\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\n\tvar word string\n\tfmt.Sscanf(scanner.Text(), \"%s\", &word)\n\tgrid := make([][]byte, 0)\n\n\tfor scanner.Scan() {\n\t\tgrid = append(grid, []byte(scanner.Text()))\n\t}\n\n\tif exist(grid, word) {\n\t\tfmt.Println(\"true\")\n\t} else {\n\t\tfmt.Println(\"false\")\n\t}\n}\n",
+            "lines": "68"
         }
     ]
 }

@@ -42,7 +42,12 @@
         },
         {
             "label": "2026-06-01_16-20-01",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n// N\u00e3o modifique a assinatura da fun\u00e7\u00e3o numIslands\n// Ela \u00e9 a fun\u00e7\u00e3o que ser\u00e1 chamada no LeetCode para resolver o problema\nfunc numIslands(grid [][]byte) int {\n\tcount := 0\n\tfor i := range grid{\n\t\tfor j := range grid[i]{\n\t\t\tif grid[i][j] == '1' {\n\t\t\t\tcount++\n\t\t\t\tdfs(grid, i, j)\n\t\t\t}\n\t\t}\n\t}\n\treturn count\n}\n\nfunc dfs(grid [][]byte, i, j int){\n\tif j < 0 || i < 0 || i >= len(grid) || j >= len(grid[0]) || grid[i][j] == '0' {\n\t\treturn\n\t}\n\n\tgrid[i][j] = '0'\n\t\n\tdfs(grid, i+1, j)\n\tdfs(grid, i-1, j)\n\tdfs(grid, i, j-1)\n\tdfs(grid, i, j+1)\n}\n\n// N\u00e3o modifique a fun\u00e7\u00e3o main\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tvar nl, nc int\n\tfmt.Sscanf(line, \"%d %d\", &nl, &nc)\n\tgrid := make([][]byte, nl)\n\tfor i := 0; i < nl; i++ {\n\t\tscanner.Scan()\n\t\tgrid[i] = []byte(scanner.Text())\n\t}\n\tresult := numIslands(grid)\n\tfmt.Println(result)\n}\n",
+            "content": "@@ -1,6 +1,4 @@\n- %09\n pack\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-02_18-58-58",
+            "content": " \tpackage main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n// N\u00e3o modifique a assinatura da fun\u00e7\u00e3o numIslands\n// Ela \u00e9 a fun\u00e7\u00e3o que ser\u00e1 chamada no LeetCode para resolver o problema\nfunc numIslands(grid [][]byte) int {\n\tcount := 0\n\tfor i := range grid{\n\t\tfor j := range grid[i]{\n\t\t\tif grid[i][j] == '1' {\n\t\t\t\tcount++\n\t\t\t\tdfs(grid, i, j)\n\t\t\t}\n\t\t}\n\t}\n\treturn count\n}\n\nfunc dfs(grid [][]byte, i, j int){\n\tif j < 0 || i < 0 || i >= len(grid) || j >= len(grid[0]) || grid[i][j] == '0' {\n\t\treturn\n\t}\n\n\tgrid[i][j] = '0'\n\t\n\tdfs(grid, i+1, j)\n\tdfs(grid, i-1, j)\n\tdfs(grid, i, j-1)\n\tdfs(grid, i, j+1)\n}\n\n// N\u00e3o modifique a fun\u00e7\u00e3o main\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tvar nl, nc int\n\tfmt.Sscanf(line, \"%d %d\", &nl, &nc)\n\tgrid := make([][]byte, nl)\n\tfor i := 0; i < nl; i++ {\n\t\tscanner.Scan()\n\t\tgrid[i] = []byte(scanner.Text())\n\t}\n\tresult := numIslands(grid)\n\tfmt.Println(result)\n}\n",
             "lines": "51"
         }
     ]

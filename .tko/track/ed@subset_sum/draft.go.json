@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-06-01_17-13-32",
-            "content": "package main\nimport \"fmt\"\n\n\nfunc search(vet []int, idx, curSum int, sum int, count int) bool {\n    if curSum == sum {\n        return true\n    }\n\n    if count == len(vet) || curSum > sum {\n        return false \n    }\n\n    nextIdx := (idx+1)%len(vet)\n\n    return search(vet, nextIdx, curSum+vet[idx], sum, count+1 ) ||\n            search(vet, nextIdx, curSum, sum, count+1)\n}\n\nfunc main() {\n    var num, sum int\n    fmt.Scan(&num, &sum)\n\n    vet := make([]int, num)\n    for i := range num {\n        fmt.Scan(&vet[i])\n    }\n\n    fmt.Println(search(vet, 0, 0, sum, 0))\n}\n",
+            "content": "@@ -20,16 +20,17 @@\n  %22fmt%22%0A%0A\n+%0A\n func sea\n@@ -456,17 +456,16 @@\n nt, num)\n- \n %0A    for\n",
             "lines": "30"
+        },
+        {
+            "label": "2026-06-02_18-38-21",
+            "content": "package main\nimport \"fmt\"\n\nfunc search(vet []int, idx, curSum int, sum int, count int) bool {\n    if curSum == sum {\n        return true\n    }\n\n    if count == len(vet) || curSum > sum {\n        return false \n    }\n\n    nextIdx := (idx+1)%len(vet)\n\n    return search(vet, nextIdx, curSum+vet[idx], sum, count+1 ) ||\n            search(vet, nextIdx, curSum, sum, count+1)\n}\n\nfunc main() {\n    var num, sum int\n    fmt.Scan(&num, &sum)\n\n    vet := make([]int, num) \n    for i := range num {\n        fmt.Scan(&vet[i])\n    }\n\n    fmt.Println(search(vet, 0, 0, sum, 0))\n}\n",
+            "lines": "29"
         }
     ]
 }

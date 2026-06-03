@@ -1,7 +1,6 @@
 package main
 import "fmt"
 
-
 func search(vet []int, idx, curSum int, sum int, count int) bool {
     if curSum == sum {
         return true
