@@ -1,0 +1,7 @@
+2026-06-05 10:24:50, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-06-05 10:24:56, EXEC, v:1, k:ed@mdc, mode:FULL, rate:0, size:18
+2026-06-05 10:24:56, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-06-05 10:25:20, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-06-05 10:25:21, EXEC, v:1, k:ed@caminhao, mode:FULL, rate:100
+2026-06-05 10:25:23, MOVE, v:1, k:ed@caminhao, mode:BACK
+2026-06-05 10:25:26, MOVE, v:1, k:ed@caminhao, mode:PICK
