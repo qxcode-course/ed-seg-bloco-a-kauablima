@@ -1,0 +1,5 @@
+2026-06-10 23:02:27, MOVE, v:1, k:ed@rotten, mode:PICK
+2026-06-10 23:02:40, EXEC, v:1, k:ed@rotten, mode:FULL, size:42, fail:COMP
+2026-06-10 23:02:40, MOVE, v:1, k:ed@rotten, mode:BACK
+2026-06-10 23:02:44, MOVE, v:1, k:ed@cercado, mode:EDIT
+2026-06-10 23:29:33, MOVE, v:1, k:ed@pintura, mode:PICK

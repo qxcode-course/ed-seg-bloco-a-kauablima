@@ -13,12 +13,12 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@basic
 - ed@bfs
+- ed@basic
 - ed@dfs
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'

@@ -22,8 +22,13 @@
         },
         {
             "label": "2026-06-02_19-02-34",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar row, col int\n\tfmt.Scan(&row, &col)\n\n\tgrid := make([][]int, row)\n\n\tfor i := 0; i < row; i++ {\n\t\tgrid[i] = make([]int, col)\n\t\tfor j := 0; j < col; j++ {\n\t\t\tfmt.Scan(&grid[i][j])\n\t\t}\n\t}\n\n\tfor i := 0; i < row; i++ {\n\t\tfmt.Println(grid[i])\n\t}\n}\n",
+            "content": "@@ -25,284 +25,8 @@\n t%22%0A%0A\n-func search(grid %5B%5D%5B%5Dint) int %7B%0A%0A    for i := range grid %7B%0A        for j := range grid%5Bi%5D %7B%0A            if %7B%0A                count = -1%0A            %7D%0A        %7D%0A    %7D%0A%0A    return count%0A%7D%0A%0Afunc bfs(grid %5B%5D%5B%5Dint, i, j int)  %7B%0A    if i %3E= len(grid) %7C%7C%7B%0A        return%0A    %7D%0A%0A%0A%0A%7D%0A%0A\n func\n@@ -53,20 +53,17 @@\n col int%0A\n-    \n+%09\n fmt.Scan\n@@ -76,20 +76,17 @@\n  &col)%0A%0A\n-    \n+%09\n grid := \n@@ -105,20 +105,17 @@\n , row)%0A%0A\n-    \n+%09\n for i :=\n@@ -130,21 +130,17 @@\n row;\n+ \n i++\n+ \n %7B%0A\n-        \n+%09%09\n grid\n@@ -162,24 +162,18 @@\n t, col)%0A\n-        \n+%09%09\n for j :=\n@@ -174,17 +174,16 @@\n r j := 0\n- \n ; j %3C co\n@@ -190,26 +190,16 @@\n l; j\n- \n ++ %7B%0A\n-            \n+%09%09%09\n fmt.\n@@ -219,56 +219,69 @@\n %5Bj%5D)\n- %0A        %7D%0A    %7D%0A%0A%0A    fmt.Println(search(grid))\n+%0A%09%09%7D%0A%09%7D%0A%0A%09for i := 0; i %3C row; i++ %7B%0A%09%09fmt.Println(grid%5Bi%5D)%0A%09%7D\n %0A%7D%0A\n",
             "lines": "21"
+        },
+        {
+            "label": "2026-06-10_23-02-40",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc search(grid [][]int) int {\n\n    for i := range grid {\n        for j := range grid[i] {\n            if {\n                count = -1\n            }\n        }\n    }\n\n    return count\n}\n\nfunc bfs(grid [][]int, i, j int)  {\n    if i >= len(grid) ||{\n        return\n    }\n\n\n\n}\n\nfunc main() {\n\tvar row, col int\n    fmt.Scan(&row, &col)\n\n    grid := make([][]int, row)\n\n    for i := 0; i < row;i++{\n        grid[i] = make([]int, col)\n        for j := 0 ; j < col; j ++ {\n            fmt.Scan(&grid[i][j]) \n        }\n    }\n\n\n    fmt.Println(search(grid))\n}\n",
+            "lines": "42"
         }
     ]
 }

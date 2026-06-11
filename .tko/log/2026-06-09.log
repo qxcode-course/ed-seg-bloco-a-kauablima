@@ -44,3 +44,5 @@
 2026-06-09 18:02:31, MOVE, v:1, k:ed@cercado, mode:PICK
 2026-06-09 18:02:32, EXEC, v:1, k:ed@cercado, mode:FULL, rate:33
 2026-06-09 18:02:33, MOVE, v:1, k:ed@cercado, mode:BACK
+2026-06-09 18:02:02, MOVE, v:1, k:ed@pintura, mode:EDIT
+2026-06-09 18:10:03, MOVE, v:1, k:ed@cercado, mode:EDIT
