@@ -1,0 +1,4 @@
+2026-07-03 19:47:18, MOVE, v:1, k:ed@lista_d1, mode:PICK
+2026-07-03 19:47:19, EXEC, v:1, k:ed@lista_d1, mode:FULL, size:116, fail:COMP
+2026-07-03 19:47:20, EXEC, v:1, k:ed@lista_d1, mode:FULL, fail:COMP
+2026-07-03 19:48:03, MOVE, v:1, k:ed@lista_d1, mode:EDIT

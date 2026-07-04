@@ -1,0 +1,31 @@
+2026-06-14 01:38:39, MOVE, v:1, k:ed@longest, mode:PICK
+2026-06-14 01:38:40, EXEC, v:1, k:ed@longest, mode:FULL, size:46, fail:COMP
+2026-06-14 01:38:40, EXEC, v:1, k:ed@longest, mode:FULL, size:46, fail:COMP
+2026-06-14 01:38:41, MOVE, v:1, k:ed@longest, mode:BACK
+2026-06-14 01:38:43, MOVE, v:1, k:ed@longest, mode:PICK
+2026-06-14 01:39:25, MOVE, v:1, k:ed@longest, mode:PICK
+2026-06-14 01:39:08, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-14 01:42:08, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-06-14 01:43:32, MOVE, v:1, k:ed@longest, mode:BACK
+2026-06-14 01:43:56, MOVE, v:1, k:ed@permutacoes, mode:DOWN
+2026-06-14 01:43:56, MOVE, v:1, k:ed@n_rainhas, mode:DOWN
+2026-06-14 01:44:02, MOVE, v:1, k:ed@distancia, mode:PICK
+2026-06-14 01:42:08, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@permutacoes, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-14 01:43:56, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-14 01:46:35, MOVE, v:1, k:ed@longest, mode:EDIT
+2026-06-14 01:46:35, MOVE, v:1, k:ed@longest, mode:EDIT

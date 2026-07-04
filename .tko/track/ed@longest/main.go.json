@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_14-47-45",
+            "content": "@@ -384,20 +384,16 @@\n , c int)\n- int\n %0A%0A%09dfs =\n@@ -403,28 +403,24 @@\n nc(r, c int)\n- int\n  %7B%0A%09%09if memo\n",
+            "lines": "93"
+        },
+        {
+            "label": "2026-06-15_14-50-26",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc max(a, b int) int {\n\tif a > b {\n\t\treturn a\n\t}\n\n\treturn b\n}\n\nfunc longestIncreasingPath(matrix [][]int) int {\n\trows := len(matrix)\n\tcols := len(matrix[0])\n\n\tmemo := make([][]int, rows)\n\tfor i := range memo {\n\t\tmemo[i] = make([]int, cols)\n\t}\n\n\tdirs := [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}\n\n\tvar dfs func(r, c int) int\n\n\tdfs = func(r, c int) int {\n\t\tif memo[r][c] != 0 {\n\t\t\treturn memo[r][c]\n\t\t}\n\n\t\tmaxPath := 1\n\n\t\tfor _, d := range dirs {\n\t\t\tnr, nc := r+d[0], c+d[1]\n\n\t\t\tif nr >= 0 && nr < rows && nc >= 0 && nc < cols && matrix[nr][nc] > matrix[r][c] {\n\t\t\t\tmaxPath = max(maxPath, 1+dfs(nr, nc))\n\t\t\t}\n\t\t}\n\n\t\tmemo[r][c] = maxPath\n\t\treturn maxPath\n\n\t}\n\n\tlongestPath := 0\n\n\tfor i := 0; i < rows; i++ {\n\t\tfor j := 0; j < cols; j++ {\n\t\t\tlongestPath = max(longestPath, dfs(i, j))\n\t\t}\n\t}\n\n\treturn longestPath\n\n}\n\n// N\u00e3o modifique a fun\u00e7\u00e3o main\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tparts := strings.Fields(scanner.Text())\n\tif len(parts) < 2 {\n\t\treturn\n\t}\n\tnl, _ := strconv.Atoi(parts[0])\n\tnc, _ := strconv.Atoi(parts[1])\n\n\tmatrix := make([][]int, nl)\n\tfor i := 0; i < nl; i++ {\n\t\tif !scanner.Scan() {\n\t\t\treturn\n\t\t}\n\t\ttokens := strings.Fields(scanner.Text())\n\t\trow := make([]int, nc)\n\t\tfor j := 0; j < nc && j < len(tokens); j++ {\n\t\t\tv, _ := strconv.Atoi(tokens[j])\n\t\t\trow[j] = v\n\t\t}\n\t\tmatrix[i] = row\n\t}\n\n\tfmt.Println(longestIncreasingPath(matrix))\n}\n",
+            "lines": "93"
+        }
+    ]
+}
