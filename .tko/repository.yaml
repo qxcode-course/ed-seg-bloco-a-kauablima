@@ -13,16 +13,9 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@vector
-- ed@list
-- ed@map_set
-- ed@rec
-- ed@bfs
-- ed@backtrack
 - ed@basic
-- ed@dfs
 - ed@tree
-- ed@linear
+- ed@map_set
 flags:
   inbox: all
   panel: skills
@@ -32,5 +25,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@linear
-selected_index: 59
+selected: ed@bst_remove
+selected_index: 33

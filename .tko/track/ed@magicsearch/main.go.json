@@ -52,6 +52,16 @@
         },
         {
             "label": "2026-07-06_12-47-45",
+            "content": "@@ -207,11 +207,8 @@\n /2  \n- b \n %0A%0A%09%09\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-07-06_13-41-44",
+            "content": "@@ -203,16 +203,19 @@\n low)/2  \n+ b \n %0A%0A%09%09if v\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-07-06_13-41-52",
             "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n//buscabinaria\n\nfunc MagicSearch(slice []int, value int) int {\n\thigh := len(slice) -1 \n\tlow := 0\n\n\tfor high >= low {\n\t\tmid := (high +low)/2  \n\n\t\tif value >= slice[mid]{\n\t\t\tlow = mid + 1\n\t\t}\n\n\t\tif value < slice[mid]{\n\t\t\thigh = mid -1 \n\t\t}\n\n\t}\n\n\tif low > 0 && slice[low-1] == value {\n\t\treturn low -1\n\t}\n\n\treturn low\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Fields(scanner.Text())\n\tslice := make([]int, 0, 1)\n\tfor _, elem := range parts[1 : len(parts)-1] {\n\t\tvalue, _ := strconv.Atoi(elem)\n\t\tslice = append(slice, value)\n\t}\n\n\tscanner.Scan()\n\tvalue, _ := strconv.Atoi(scanner.Text())\n\tresult := MagicSearch(slice, value)\n\tfmt.Println(result)\n}\n",
             "lines": "50"
         }

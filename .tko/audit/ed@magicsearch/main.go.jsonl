@@ -18,3 +18,5 @@
 {"ts":1783352659,"hash":"f7130d7fb2002a7beac4d56dc29b38e4cb4662b6998ead3596e344b7eadb7c3b","mode":"diff","ops":[{"tag":"replace","a1":16,"a2":17,"text":"\t\tmid := (high +low)/2  \n\n\t\tif value == slice[mid] {\n\t\t\n\t\t\treturn mid\n\t\t}\n"}]}
 {"ts":1783352684,"hash":"25053b18a71f65a802958023fc2310c97b9f2be15ccab05e2b2d83942222fe20","mode":"diff","ops":[{"tag":"delete","a1":32,"a2":37,"text":""}]}
 {"ts":1783352859,"hash":"f7130d7fb2002a7beac4d56dc29b38e4cb4662b6998ead3596e344b7eadb7c3b","mode":"diff","ops":[{"tag":"insert","a1":32,"a2":32,"text":"\n\tif low > 0 && slice[low-1] == value {\n\t\treturn low -1\n\t}\n\n"}]}
+{"ts":1783356079,"hash":"60cfb6e91b06324806c89102d21a4aa3872b48c7fa41cf9a06f7c8293d9b4751","mode":"diff","ops":[{"tag":"replace","a1":16,"a2":17,"text":"\t\tmid := (high +low)/2   b \n"},{"tag":"replace","a1":18,"a2":19,"text":"\t\tif value >= slice[mid]{\n"}]}
+{"ts":1783356112,"hash":"4b8a6109421042600895c255d8a63d49dac311d38d4f4aee4d52c175535ea512","mode":"diff","ops":[{"tag":"replace","a1":16,"a2":17,"text":"\t\tmid := (high +low)/2  \n"}]}
