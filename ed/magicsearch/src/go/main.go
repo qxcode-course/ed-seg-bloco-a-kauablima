@@ -7,10 +7,30 @@ import (
 	"strconv"
 	"strings"
 )
+//buscabinaria
 
 func MagicSearch(slice []int, value int) int {
-	_, _ = slice, value
-	return 0
+	high := len(slice) -1 
+	low := 0
+
+	for high >= low {
+		mid := (high +low)/2  
+
+		if value >= slice[mid]{
+			low = mid + 1
+		}
+
+		if value < slice[mid]{
+			high = mid -1 
+		}
+
+	}
+
+	if low > 0 && slice[low-1] == value {
+		return low -1
+	}
+
+	return low
 }
 
 func main() {

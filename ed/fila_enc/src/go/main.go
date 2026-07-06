@@ -4,16 +4,57 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 )
 
-// func (q *Queue[T]) Enqueue(value T)
-// func (q *Queue[T]) Dequeue() (T, bool)
-// func (q *Queue[T]) Peek() (T, bool)
-// func (q *Queue[T]) Size() int
-// func (q *Queue[T]) IsEmpty() bool
-// func (q *Queue[T]) Clear()
+func (q *Queue[T]) Enqueue(value T) {
+	newNode := &Node[T]{Value: value, next: nil}
 
+	if q.size == 0 {
+		q.head = newNode
+		q.tail = newNode
+		q.size++
+		return
+	}
+
+	q.tail.next = newNode
+	q.tail = newNode
+	q.size++
+}
+
+func (q *Queue[T]) Dequeue() (T, bool) {
+	if q.size == 0 {
+		var zeroValue T
+		return zeroValue, false
+	}
+
+	val := q.head.Value
+	q.head = q.head.next
+	q.size--
+
+	if q.size == 0 {
+		q.tail = nil
+	}
+	return val, true
+}
+
+
+
+func (q *Queue[T]) Peek() (T, bool) {
+	if q.size == 0 {
+		var zeroValue T
+		return zeroValue, false
+	}
+
+	return q.head.Value, true
+}
+
+func (q *Queue[T]) Clear() {
+	q.head = nil
+	q.tail = nil
+	q.size = 0
+}
 
 type Node[T any] struct {
 	Value T
@@ -61,20 +102,20 @@ func main() {
 		case "show":
 			fmt.Println(queue)
 		case "push":
-			// for _, arg := range args[1:] {
-			// 	value, _ := strconv.Atoi(arg)
-			// 	queue.Enqueue(value)
-			// }
+			for _, arg := range args[1:] {
+				value, _ := strconv.Atoi(arg)
+				queue.Enqueue(value)
+			}
 		case "pop":
-			// if _, ok := queue.Dequeue(); !ok {
-			// 	fmt.Println("falha: fila vazia")
-			// }
+			if _, ok := queue.Dequeue(); !ok {
+				fmt.Println("falha: fila vazia")
+			}
 		case "peek":
-			// if value, ok := queue.Peek(); ok {
-			// 	fmt.Println(value)
-			// } else {
-			// 	fmt.Println("falha: fila vazia")
-			// }
+			if value, ok := queue.Peek(); ok {
+				fmt.Println(value)
+			} else {
+				fmt.Println("falha: fila vazia")
+			}
 		default:
 			fmt.Println("Unknown command:", args[0])
 		}
