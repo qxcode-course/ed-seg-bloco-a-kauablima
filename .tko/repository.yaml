@@ -13,9 +13,9 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@basic
-- ed@tree
+- ed@linear
 - ed@map_set
+- ed@basic
 flags:
   inbox: all
   panel: skills
@@ -25,5 +25,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@bst_remove
-selected_index: 33
+selected: ed@queimando
+selected_index: 25
