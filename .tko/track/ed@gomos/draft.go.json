@@ -2,8 +2,73 @@
     "patches": [
         {
             "label": "2026-06-01_00-40-09",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,227 +23,53 @@\n mt%22%0A\n-%0Atype Pos struct %7B%0A    x int %0A    y int%0A%7D%0A%0Afunc main() %7B%0A    var n1, w int%0A    fmt.Scan(&n1, &w)%0A%0A    vet := make(%5B%5DPos, n1)%0A    for i := 0 ; i %3C n1; i++ %7B%0A        fmt.Scan(&vet%5Bi%5D.x, &vet%5Bi%5D.y)%0A    %7D%0A%0A%0A%09fmt.Println(vet\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-06_23-13-39",
+            "content": "@@ -43,16 +43,23 @@\n t %7B%0A\n-%09\n+    \n x int\n-%0A%09\n+ %0A    \n y in\n@@ -81,52 +81,25 @@\n ) %7B%0A\n-%09var n1 int%0A%09fmt.Scan(&n1) %0A\n+ \n    \n- \n var \n-w string\n+n1, w int\n %0A   \n@@ -113,13 +113,21 @@\n an(&\n-w)%0A%0A%09\n+n1, &w)%0A%0A    \n vet \n@@ -145,17 +145,20 @@\n os, n1)%0A\n-%09\n+    \n for i :=\n@@ -151,32 +151,33 @@\n )%0A    for i := 0\n+ \n ; i %3C n1; i++ %7B%0A\n@@ -172,26 +172,32 @@\n %3C n1; i++ %7B%0A\n-%09%09\n+        \n fmt.Scan(&ve\n@@ -219,173 +219,16 @@\n .y)%0A\n-%09%7D%0A%0A%09var x, y int%0A%09fmt.Scan(&x, &y)%0A%0A%09for i := 0; i %3C n1-1; i++ %7B%0A%09%09vet%5Bi%5D = vet%5Bi+1%5D%0A%09%7D%0A%0A%09switch w%7B%0A%09    case %22L%22:%0A%09%09    vet%5B0%5D.x--%0A%09%7D%0A%0A%09for i := 0; i %3C n1; i++ %7B%0A%09\n+    %7D%0A%0A%0A\n %09fmt\n@@ -245,10 +245,6 @@\n et)%0A\n-%09%7D%0A%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-06_23-21-22",
+            "content": "@@ -402,23 +402,8 @@\n (vet\n-%5Bi%5D.x, vet%5Bi%5D.y\n )%0A%09%7D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-07-06_23-21-41",
+            "content": "@@ -354,34 +354,8 @@\n x--%0A\n-        case %22%22:%0A        %0A\n %09%7D%0A%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-07-06_23-22-14",
+            "content": "@@ -96,18 +96,22 @@\n can(&n1)\n-%0A%09\n+ %0A    \n var w st\n@@ -115,17 +115,20 @@\n  string%0A\n-%09\n+    \n fmt.Scan\n@@ -316,20 +316,23 @@\n switch w\n- \n %7B%0A%09\n+    \n case %22L%22\n@@ -331,24 +331,28 @@\n case %22L%22:%0A%09%09\n+    \n vet%5B0%5D.x--%0A%09\n@@ -354,54 +354,33 @@\n x--%0A\n-%09case %22R%22:%0A%09%09vet%5B0%5D.x++%0A%09\n+        \n case %22\n-D\n %22:%0A\n-%09case %22U%22:%0A\n+        \n %0A%09%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-07-06_23-23-17",
+            "content": "@@ -375,27 +375,8 @@\n D%22:%0A\n-        vet%5B0%5D.y--%0A\n %09cas\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-07-06_23-23-38",
+            "content": "@@ -405,26 +405,8 @@\n U%22:%0A\n-        vet%5B0%5D.y++\n %0A%09%7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-06_23-23-47",
+            "content": "@@ -371,9 +371,9 @@\n se %22\n-U\n+D\n %22:%0A \n@@ -391,22 +391,19 @@\n 0%5D.y\n-++%0A    \n+--%0A%09\n case %22\n-D\n+U\n %22:%0A \n@@ -417,18 +417,18 @@\n vet%5B0%5D.y\n---\n+++\n %0A%09%7D%0A%0A%09fo\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-06_23-24-04",
+            "content": "@@ -371,26 +371,32 @@\n se %22U%22:%0A\n-%09%09\n+        \n vet%5B0%5D.y\n --%0A%09case\n@@ -387,20 +387,23 @@\n vet%5B0%5D.y\n---%0A%09\n+++%0A    \n case %22D%22\n@@ -408,18 +408,24 @@\n D%22:%0A\n-%09%09\n+        \n vet%5B0%5D.y\n ++%0A%09\n@@ -420,18 +420,18 @@\n vet%5B0%5D.y\n-++\n+--\n %0A%09%7D%0A%0A%09fo\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-06_23-24-17",
+            "content": "@@ -76,16 +76,17 @@\n %7B%0A%09var n\n+1\n  int%0A%09fm\n@@ -94,16 +94,17 @@\n .Scan(&n\n+1\n )%0A%09var w\n@@ -147,18 +147,18 @@\n %5B%5DPos, n\n+1\n )\n-%0A\n %0A%09for i \n@@ -160,32 +160,33 @@\n or i := 0; i %3C n\n+1\n ; i++ %7B%0A%09%09fmt.Sc\n@@ -217,12 +217,43 @@\n %0A%09%7D%0A\n-    \n+%0A%09var x, y int%0A%09fmt.Scan(&x, &y)%0A%0A%09\n for \n@@ -265,16 +265,17 @@\n 0; i %3C n\n+1\n -1; i++ \n@@ -302,40 +302,8 @@\n %5D%0A%09%7D\n-%0A%09var x, y int%0A%09fmt.Scan(&x, &y)\n %0A%0A%09s\n@@ -430,16 +430,17 @@\n 0; i %3C n\n+1\n ; i++ %7B%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-06_23-25-44",
+            "content": "@@ -151,12 +151,8 @@\n  n)%0A\n-    \n %0A%09fo\n@@ -214,43 +214,12 @@\n %0A%09%7D%0A\n-%0A%09var x, y int%0A%09fmt.Scan(&x, &y)%0A%0A%09\n+    \n for \n@@ -263,16 +263,48 @@\n %5Bi+1%5D%0A%09%7D\n+%0A%09var x, y int%0A%09fmt.Scan(&x, &y)\n %0A%0A%09switc\n@@ -326,17 +326,17 @@\n :%0A%09%09vet%5B\n-1\n+0\n %5D.x--%0A%09c\n@@ -350,17 +350,17 @@\n :%0A%09%09vet%5B\n-1\n+0\n %5D.x++%0A%09c\n@@ -374,17 +374,17 @@\n :%0A%09%09vet%5B\n-1\n+0\n %5D.y--%0A%09c\n@@ -398,17 +398,17 @@\n :%0A%09%09vet%5B\n-1\n+0\n %5D.y++%0A%09%7D\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-07-06_23-27-36",
+            "content": "@@ -257,19 +257,18 @@\n for i :=\n-n-1\n+ 0\n ; i %3C n-\n@@ -329,17 +329,17 @@\n :%0A%09%09vet%5B\n-0\n+1\n %5D.x--%0A%09c\n@@ -353,17 +353,17 @@\n :%0A%09%09vet%5B\n-0\n+1\n %5D.x++%0A%09c\n@@ -377,17 +377,17 @@\n :%0A%09%09vet%5B\n-0\n+1\n %5D.y--%0A%09c\n@@ -401,17 +401,17 @@\n :%0A%09%09vet%5B\n-0\n+1\n %5D.y++%0A%09%7D\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-06_23-27-44",
+            "content": "@@ -268,16 +268,18 @@\n ; i \n-%3E 0; i--\n+%3C n-1; i++\n  %7B%0A%09\n@@ -293,17 +293,17 @@\n  = vet%5Bi\n--\n++\n 1%5D%0A%09%7D%0A%0A%09\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-06_23-28-07",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Pos struct {\n\tx int\n\ty int\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\tvar w string\n\tfmt.Scan(&w)\n\n\tvet := make([]Pos, n)\n    \n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vet[i].x, &vet[i].y)\n\t}\n\n\tvar x, y int\n\tfmt.Scan(&x, &y)\n\n\tfor i :=n-1; i > 0; i-- {\n\t\tvet[i] = vet[i-1]\n\t}\n\n\tswitch w {\n\tcase \"L\":\n\t\tvet[0].x--\n\tcase \"R\":\n\t\tvet[0].x++\n\tcase \"U\":\n\t\tvet[0].y--\n\tcase \"D\":\n\t\tvet[0].y++\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Println(vet[i].x, vet[i].y)\n\t}\n\n}\n",
+            "lines": "44"
         }
     ]
 }

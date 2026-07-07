@@ -357,3 +357,48 @@
 2026-07-06 22:52:42, MOVE, v:1, k:ed@chaves, mode:BACK
 2026-07-06 22:52:29, MOVE, v:1, k:ed@chaves, mode:EDIT
 2026-07-06 22:52:29, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-07-06 23:00:39, MOVE, v:1, k:ed@queimando, mode:PICK
+2026-07-06 23:00:40, EXEC, v:1, k:ed@queimando, mode:FULL, fail:COMP
+2026-07-06 23:00:56, MOVE, v:1, k:ed@queimando, mode:BACK
+2026-07-06 23:01:11, MOVE, v:1, k:ed@iterador, mode:PICK
+2026-07-06 23:01:11, EXEC, v:1, k:ed@iterador, mode:FULL, rate:33
+2026-07-06 23:01:16, MOVE, v:1, k:ed@iterador, mode:BACK
+2026-07-06 23:01:18, MOVE, v:1, k:ed@iterador, mode:PICK
+2026-07-06 23:04:26, MOVE, v:1, k:ed@iterador, mode:BACK
+2026-07-06 23:04:32, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-07-06 23:04:33, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-07-06 23:04:42, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-07-06 23:04:43, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:5
+2026-07-06 23:04:52, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-07-06 23:04:53, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-07-06 23:07:27, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-07-06 23:07:39, MOVE, v:1, k:ed@gomos, mode:PICK
+2026-07-06 23:07:43, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-07-06 23:10:04, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-07-06 23:13:09, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-07-06 23:13:39, EXEC, v:1, k:ed@gomos, mode:FULL, rate:0, size:21
+2026-07-06 23:15:00, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-07-06 23:18:15, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-07-06 23:20:04, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-07-06 23:21:22, EXEC, v:1, k:ed@gomos, mode:FULL, rate:0, size:37
+2026-07-06 23:21:41, EXEC, v:1, k:ed@gomos, mode:FULL, rate:16, size:37
+2026-07-06 23:22:10, MOVE, v:1, k:ed@gomos, mode:BACK
+2026-07-06 23:22:11, MOVE, v:1, k:ed@gomos, mode:PICK
+2026-07-06 23:22:14, EXEC, v:1, k:ed@gomos, mode:FULL, rate:16, size:39
+2026-07-06 23:23:10, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-07-06 23:23:17, EXEC, v:1, k:ed@gomos, mode:FULL, rate:33, size:42
+2026-07-06 23:23:38, EXEC, v:1, k:ed@gomos, mode:FULL, rate:33, size:43
+2026-07-06 23:23:47, EXEC, v:1, k:ed@gomos, mode:FULL, rate:33, size:43
+2026-07-06 23:24:04, EXEC, v:1, k:ed@gomos, mode:FULL, rate:33, size:43
+2026-07-06 23:24:17, EXEC, v:1, k:ed@gomos, mode:FULL, rate:66, size:43
+2026-07-06 23:24:55, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-07-06 23:25:44, EXEC, v:1, k:ed@gomos, mode:FULL, rate:66, size:42
+2026-07-06 23:27:36, EXEC, v:1, k:ed@gomos, mode:FULL, rate:0, size:44
+2026-07-06 23:27:44, EXEC, v:1, k:ed@gomos, mode:FULL, rate:66, size:44
+2026-07-06 23:28:07, EXEC, v:1, k:ed@gomos, mode:FULL, rate:100, size:44
+2026-07-06 23:28:09, MOVE, v:1, k:ed@gomos, mode:BACK
+2026-07-06 23:28:07, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-07-06 23:28:19, SELF, v:1, k:ed@gomos, self:1, rate:100, study:5
+2026-07-06 23:28:20, MOVE, v:1, k:ed@gomos, mode:PICK
+2026-07-06 23:28:21, EXEC, v:1, k:ed@gomos, mode:FULL, rate:100
+2026-07-06 23:28:21, MOVE, v:1, k:ed@gomos, mode:BACK

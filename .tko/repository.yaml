@@ -14,8 +14,6 @@ sources:
   quests: null
 expanded:
 - ed@linear
-- ed@map_set
-- ed@basic
 flags:
   inbox: all
   panel: skills
@@ -25,5 +23,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@queimando
-selected_index: 25
+selected: ed@balanceada
+selected_index: 12
