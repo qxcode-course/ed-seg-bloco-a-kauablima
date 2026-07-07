@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_14-30-49",
+            "content": "@@ -10,229 +10,65 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A%0A    text := scanner.Text()%0A    vet := %5B%5Drune%7B%7D%0A%0A    for _, c := range text %7B%0A        if%0A    %7D%0A    fmt.Println(%22\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-07_17-52-42",
+            "content": "@@ -207,73 +207,8 @@\n   if\n- c == '(' %7C%7C c == '%5B'%7B%0A            vet = append(vet, c)%0A        %7D\n %0A   \n@@ -226,15 +226,14 @@\n Println(\n-vet\n+%22%22\n )%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-07_17-53-28",
+            "content": "@@ -283,121 +283,23 @@\n     \n-if len(vet) != 0 %7B%0A        fmt.Println(%22nao balanceado%22)%0A    %7D else %7B%0A        fmt.Println(%22balanceado%22)%0A    %7D%0A    \n+fmt.Println(vet)\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-07_17-54-28",
+            "content": "@@ -272,116 +272,8 @@\n    %7D\n- else if len(vet) == 0 %7C%7C vet%5Blen(vet)-1%5D != c %7B%0A            fmt.Println(%22n%C3%A3o balanceado%22)%0A        %7D        \n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-07_17-58-13",
+            "content": "@@ -363,40 +363,8 @@\n o%22)%0A\n-            return%0A            %0A\n     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-07_17-58-19",
+            "content": "@@ -378,17 +378,16 @@\n  return%0A\n-%0A\n         \n@@ -394,30 +394,8 @@\n     \n-vet = vet%5B:len(vet)-1%5D\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-07_17-59-04",
+            "content": "@@ -274,30 +274,16 @@\n  %7D else \n-%7B%0A            \n if len(v\n@@ -317,20 +317,16 @@\n  != c %7B%0A\n-    \n         \n@@ -375,32 +375,15 @@\n     \n-    \n return%0A\n-            %7D\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_17-59-31",
+            "content": "@@ -353,33 +353,33 @@\n   fmt.Println(%22n\n-a\n+%C3%A3\n o balanceado%22)%0A \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-07_17-59-41",
+            "content": "@@ -217,65 +217,10 @@\n '(' \n-%7B%0A            vet = append(vet, ')')%0A        %7D%0A        if\n+%7C%7C\n  c =\n@@ -260,11 +260,9 @@\n et, \n-'%5D'\n+c\n )%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-07_18-01-01",
+            "content": "@@ -259,21 +259,24 @@\n        %7D\n- else\n+%0A       \n  if c ==\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-07_18-01-26",
+            "content": "@@ -150,20 +150,16 @@\n %0A    vet\n-Rune\n  := %5B%5Dru\n@@ -193,25 +193,24 @@\n  text %7B%0A\n-%0A\n         \n switch c\n@@ -205,36 +205,21 @@\n     \n-switch c %7B%0A        case\n+if c ==\n  '('\n-:\n+ %7B\n %0A   \n@@ -222,36 +222,32 @@\n %0A            vet\n-Rune\n  = append(vetRun\n@@ -243,20 +243,16 @@\n pend(vet\n-Rune\n , ')')%0A \n@@ -262,17 +262,27 @@\n     \n-case\n+%7D else if c ==\n  '%5B'\n-:\n+%7B\n %0A   \n@@ -293,20 +293,16 @@\n      vet\n-Rune\n  = appen\n@@ -306,20 +306,16 @@\n pend(vet\n-Rune\n , '%5D')%0A \n@@ -325,23 +325,16 @@\n     \n-case ')' , '%5D':\n+%7D else %7B\n %0A   \n@@ -352,20 +352,16 @@\n  len(vet\n-Rune\n ) == 0 %7C\n@@ -369,20 +369,16 @@\n  vet\n-Rune\n %5Blen(vet\n Rune\n@@ -369,28 +369,24 @@\n  vet%5Blen(vet\n-Rune\n )-1%5D != c %7B%0A\n@@ -468,17 +468,16 @@\n       %7D%0A\n-%0A\n         \n@@ -487,22 +487,14 @@\n  vet\n-Rune\n  = vet\n-Rune\n %5B:le\n@@ -498,20 +498,16 @@\n :len(vet\n-Rune\n )-1%5D%0A   \n@@ -512,24 +512,28 @@\n        %7D    \n+  \n+  \n %0A    %7D%0A    i\n@@ -545,12 +545,8 @@\n (vet\n-Rune\n ) !=\n@@ -597,14 +597,20 @@\n    %7D\n+ else %7B\n %0A    \n-%0A\n     \n@@ -634,13 +634,22 @@\n nceado%22)\n+%0A    %7D%0A  \n   %0A%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-07_18-06-58",
+            "content": "@@ -40,17 +40,16 @@\n %09%22os%22%0A)%0A\n-%0A\n func mai\n@@ -54,17 +54,20 @@\n ain() %7B%0A\n-%09\n+    \n scanner \n@@ -96,17 +96,20 @@\n .Stdin)%0A\n-%09\n+    \n scanner.\n@@ -116,17 +116,20 @@\n Scan()%0A%0A\n-%09\n+    \n text := \n@@ -143,17 +143,20 @@\n .Text()%0A\n-%09\n+    \n vetRune \n@@ -168,17 +168,20 @@\n rune%7B%7D%0A%0A\n-%09\n+    \n for _, c\n@@ -198,18 +198,24 @@\n text %7B%0A%0A\n-%09%09\n+        \n switch c\n@@ -217,18 +217,24 @@\n tch c %7B%0A\n-%09%09\n+        \n case '('\n@@ -235,19 +235,28 @@\n se '(':%0A\n-%09%09%09\n+            \n vetRune \n@@ -278,18 +278,24 @@\n e, ')')%0A\n-%09%09\n+        \n case '%5B'\n@@ -296,19 +296,28 @@\n se '%5B':%0A\n-%09%09%09\n+            \n vetRune \n@@ -343,18 +343,24 @@\n %5D')%0A\n-%09%09\n+        \n case ')'\n , '%5D\n@@ -359,18 +359,28 @@\n  ')'\n+ \n , '%5D':%0A\n-%09%09%09\n+            \n if l\n@@ -430,20 +430,32 @@\n  != c %7B%0A\n-%09%09%09%09\n+                \n fmt.Prin\n@@ -480,28 +480,58 @@\n o%22)%0A\n-%09%09%09%09return%0A%09%09%09%7D%0A%0A%09%09%09\n+                return%0A            %7D%0A%0A            \n vetR\n@@ -565,16 +565,32 @@\n -1%5D%0A\n-%09%09%7D%0A%09%7D%0A%09\n+        %7D    %0A    %7D%0A    \n if l\n@@ -612,10 +612,16 @@\n 0 %7B%0A\n-%09%09\n+        \n fmt.\n@@ -654,24 +654,19 @@\n     \n+%7D%0A\n     \n-return%0A%09%7D%0A%0A%09\n+%0A    \n fmt.\n@@ -686,11 +686,13 @@\n nceado%22)\n+  \n %0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-07-07_18-07-26",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\n\ttext := scanner.Text()\n\tvetRune := []rune{}\n\n\tfor _, c := range text {\n\n\t\tswitch c {\n\t\tcase '(':\n\t\t\tvetRune = append(vetRune, ')')\n\t\tcase '[':\n\t\t\tvetRune = append(vetRune, ']')\n\t\tcase ')', ']':\n\t\t\tif len(vetRune) == 0 || vetRune[len(vetRune)-1] != c {\n\t\t\t\tfmt.Println(\"nao balanceado\")\n\t\t\t\treturn\n\t\t\t}\n\n\t\t\tvetRune = vetRune[:len(vetRune)-1]\n\t\t}\n\t}\n\tif len(vetRune) != 0 {\n\t\tfmt.Println(\"nao balanceado\")\n        return\n\t}\n\n\tfmt.Println(\"balanceado\")\n}\n",
+            "lines": "38"
+        }
+    ]
+}

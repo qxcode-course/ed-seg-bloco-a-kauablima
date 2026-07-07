@@ -1,6 +1,6 @@
 # Pilha: Fugindo do labirinto
 
-![_](../../.tko/cache/6421490caf670842e74ba5681e807eeaa53f9028/base/pilhado/assets/cover.jpg)
+![_](assets/cover.jpg)
 
 Você vai tentar fugir do labirinto usando uma pilha no lugar da recursão.
 

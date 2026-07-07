@@ -6,9 +6,33 @@ import (
 	"os"
 )
 
+type Pos struct {
+	l int
+	c int
+}
+
 func burnTrees(grid [][]rune, l, c int) {
 	stack := NewStack[Pos]()
-	_ , _ , _ = mat, l, c
+	stack.Push(Pos{l, c})
+
+	//usar dfs:
+	for !stack.IsEmpty(){
+		pos := stack.Pop()
+		if pos.l < 0 || pos.c < 0 || pos.l >= len(grid) || pos.c >= len(grid[0]){
+			continue
+		}
+
+		if grid[pos.l][pos.c] != '#'{
+			continue
+		}
+
+
+		grid[pos.l][pos.c] = 'o'
+		stack.Push(Pos{pos.l - 1, pos.c})
+		stack.Push(Pos{pos.l + 1 , pos.c})
+		stack.Push(Pos{pos.l, pos.c - 1})
+		stack.Push(Pos{pos.l, pos.c + 1})
+	}
 
 	// Essa função deve usar uma list como pilha
 	// e marcar as árvores na matriz como queimados
